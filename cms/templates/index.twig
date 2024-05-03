@@ -1,0 +1,17 @@
+{%- extends '_boilerplate/_layouts/generic-page-layout.twig' -%}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+    {{ parent() }}
+    <div class="p-10 bg-red-600">
+        {# {{ country_names()|join(',') }} #}
+    </div>
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

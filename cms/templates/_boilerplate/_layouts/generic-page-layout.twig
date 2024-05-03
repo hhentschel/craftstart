@@ -1,0 +1,53 @@
+{# -- Layout template for HTML pages -- #}
+{#
+    ┌─────────────────────────────────────────────────────────────────────────────┐
+    │ ┌─────────────────────────────────────────────────────────────────────────┐ │
+    │ │                                                                         │ │
+    │ │                                                                         │ │
+    │ │                                                                         │ │
+    │ │                                 content                                 │ │
+    │ └─────────────────────────────────────────────────────────────────────────┘ │
+    │                                                                             │
+    │                                  bodyHtml                                   │
+    └─────────────────────────────────────────────────────────────────────────────┘
+#}
+{% extends '_boilerplate/_layouts/base-html-layout.twig' %}
+
+{# -- Any <meta> tags that should be included in the <head> #}
+{% block headMeta %}
+{% endblock headMeta %}
+
+{# -- Any <link> tags that should be included in the <head> #}
+{% block headLinks %}
+{% endblock headLinks %}
+
+{# -- Any CSS that should be included before </head> -- #}
+{% block headCss %}
+{% endblock headCss %}
+
+{# -- Page body -- #}
+{% block bodyHtml %}
+
+    <div id="page-wrapper">
+        {# -- Navigation --  #}
+        {%- include '_organisms/navigations/navigation--primary' ignore missing with {
+            navigation: null
+        } -%}
+
+        <main class="flex flex-col min-h-screen" id="page-content">
+            {# -- Primary content block -- #}
+            <div id="page" w-ref="page">
+                {% block content %}
+                  <h1>Geeeneric page</h1>
+                {% endblock %}
+            </div>
+
+            {# -- Footer -- #}
+            {%- include '_organisms/footers/footer--primary' ignore missing -%}
+        </main>
+
+        {# -- HTML Footer -- #}
+        {% include '_boilerplate/_partials/global-footer.twig' %}
+    </div>
+
+{% endblock bodyHtml %}

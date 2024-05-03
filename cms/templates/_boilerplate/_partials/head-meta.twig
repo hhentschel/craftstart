@@ -1,0 +1,23 @@
+{# -- Basic meta tags -- #}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+{# -- Prefetch & preconnect headers and links -- #}
+{% set headerLink = "Link: " %}
+{% for url in prefetchUrls %}
+    {% set headerLink = headerLink ~ "<#{url}>; rel=dns-prefetch;," %}
+    {% set headerLink = headerLink ~ "<#{url}>; rel=preconnect; crossorigin;" %}
+    {% if not loop.last %}
+        {% set headerLink = headerLink ~ "," %}
+    {% endif %}
+    <link rel="dns-prefetch" href="{{ url }}">
+    <link rel="preconnect" href="{{ url }}" crossorigin>
+{% endfor %}
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap">
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+{% header headerLink %}
+
+{# -- Favicons, webapp manifests, etc. -- #}
+{{ craft.vite.inline('@webroot/dist/assets/favicons/webapp.html') }}

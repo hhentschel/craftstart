@@ -1,0 +1,31 @@
+dateModified: 1713874682
+email:
+  fromEmail: p@henrik-hentschel.de
+  fromName: CraftDev
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    99a58225-3f4f-4a3b-a338-35e1fda743ef: CraftDev # CraftDev
+    b770f7e5-3411-4c52-91e3-c5929d334207: CraftDev # CraftDev
+plugins:
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: CraftDev
+  schemaVersion: 5.0.0.20
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true
