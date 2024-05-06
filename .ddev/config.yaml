@@ -17,6 +17,7 @@ web_environment:
     - PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
     - CPPFLAGS=-DPNG_ARM_NEON_OPT=0
     - PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
+    - CRAFT_CMD_ROOT=./cms
 nodejs_version: "20"
 router_http_port: "80"
 router_https_port: "443"
