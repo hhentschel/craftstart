@@ -1,0 +1,121 @@
+#ddev-generated
+
+http:
+  routers:
+    
+    
+    craftdev-web-80-http:
+      
+      rule: HostRegexp(`craftdev.ddev.site`, `starter.ddev.site`)
+      
+      service: "craftdev-web-80-http"
+      tls: false
+      entrypoints:
+        - http-80
+    
+    
+    craftdev-web-8025-http:
+      
+      rule: HostRegexp(`craftdev.ddev.site`, `starter.ddev.site`)
+      
+      service: "craftdev-web-8025-http"
+      tls: false
+      entrypoints:
+        - http-8025
+    
+    
+    craftdev-web-3000-http:
+      
+      rule: HostRegexp(`craftdev.ddev.site`, `starter.ddev.site`)
+      
+      service: "craftdev-web-3000-http"
+      tls: false
+      entrypoints:
+        - http-3001
+    
+    
+    
+    
+    
+    
+    
+    
+    craftdev-web-80-https:
+      
+      rule: HostRegexp(`craftdev.ddev.site`, `starter.ddev.site`)
+      
+      service: "craftdev-web-80-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-443
+    
+    
+    craftdev-web-8025-https:
+      
+      rule: HostRegexp(`craftdev.ddev.site`, `starter.ddev.site`)
+      
+      service: "craftdev-web-8025-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8026
+    
+    
+    craftdev-web-3000-https:
+      
+      rule: HostRegexp(`craftdev.ddev.site`, `starter.ddev.site`)
+      
+      service: "craftdev-web-3000-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-3000
+    
+    
+
+  services:
+    
+    craftdev-web-80-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-craftdev-web:80
+    
+    craftdev-web-8025-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-craftdev-web:8025
+    
+    craftdev-web-3000-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-craftdev-web:3000
+    
+    craftdev-web-80-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-craftdev-web:80
+    
+    craftdev-web-8025-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-craftdev-web:8025
+    
+    craftdev-web-3000-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-craftdev-web:3000
+    
+
+
+tls:
+  certificates:
+    - certFile: /mnt/ddev-global-cache/traefik/certs/craftdev.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/craftdev.key
+
