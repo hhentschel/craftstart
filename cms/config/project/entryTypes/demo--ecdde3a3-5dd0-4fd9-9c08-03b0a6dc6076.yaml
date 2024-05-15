@@ -1,0 +1,65 @@
+color: sky
+fieldLayouts:
+  1c803e1b-666d-4d6f-819d-c4ca3b1e0f3e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 46b1e9bb-d40f-4e1e-8d73-af8ecbc93dc6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: aa912073-977f-4f2e-9694-d416e9e592cf # Demo Data
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a079dc7-0800-4df9-b861-ba5af32c2aa1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 5f562f63-f836-4c47-949d-a1060bc5ffd7
+        userCondition: null
+handle: demo
+hasTitleField: true
+icon: id-card
+name: Demo
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,13 +1,61 @@
-dateModified: 1715683945
+dateModified: 1715692430
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Kanäle
+      type: heading
+    -
+      key: 'section:6d114e5e-5a0e-4036-9b48-35eb31ce25ac' # Demo
+      type: native
+    -
+      heading: Strukturen
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:a1922889-b7ec-471b-8e60-88b8d6286024' # Demo Section
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+        - section
+        - drafts
+        - 'field:aa912073-977f-4f2e-9694-d416e9e592cf' # Demo Data
+      type: native
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0d8e3a10-fa18-468b-891d-7a206f55bfed: Articles # Articles
+    2c06db6d-50b1-4577-9ed6-f1228ec28df2: 'Demo Data' # Demo Data
+    3b0d0ffe-c179-438c-b831-2543713a9adc: 'Demo Data' # Demo Data
+    3d18b3d4-9460-4d18-a77f-13a9247fd075: Simple # Simple
+    6d114e5e-5a0e-4036-9b48-35eb31ce25ac: Demo # Demo
+    68b1af7e-248e-477a-8938-bb72fa9e51a9: 'Demo Data' # Demo Data
     99a58225-3f4f-4a3b-a338-35e1fda743ef: CraftDev # CraftDev
+    9659d51a-1688-4cf0-9c10-8c6800c80b1b: 'Longform Content' # Longform Content
+    a5c32573-153f-4644-96b2-6207845b0183: Bilder # Bilder
+    a92b0c28-f216-432b-9f5e-d8359af61da6: Bilder # Bilder
+    a1696db7-4c76-46a7-ba48-17adae1ac027: 'Demo Data' # Demo Data
+    a1922889-b7ec-471b-8e60-88b8d6286024: 'Demo Section' # Demo Section
+    aa912073-977f-4f2e-9694-d416e9e592cf: 'Demo Data' # Demo Data
+    b4d53fb2-a22c-406d-a41c-9f758ab575bd: 'Longform Inhalt' # Longform Inhalt
     b770f7e5-3411-4c52-91e3-c5929d334207: CraftDev # CraftDev
+    c4cf33a7-639f-48ca-a3bb-41a1e43c323b: CTA # CTA
+    d1673e5a-ee78-4e3f-b4fc-fa783127721d: 'Demo Data' # Demo Data
+    ecdde3a3-5dd0-4fd9-9c08-03b0a6dc6076: Demo # Demo
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   minify:
     edition: standard
     enabled: true

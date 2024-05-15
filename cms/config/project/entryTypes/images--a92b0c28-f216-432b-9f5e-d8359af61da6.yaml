@@ -1,0 +1,65 @@
+color: amber
+fieldLayouts:
+  fdcef655-84f5-43db-a40a-9e7fa5214760:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 30dfeb98-f35b-405f-a615-42b0c413ac87
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a5c32573-153f-4644-96b2-6207845b0183 # Bilder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b8e9a718-0a03-473e-b971-49c0bdffb6d8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 2de244ad-8a9b-418d-a1c8-257e1bd98e50
+        userCondition: null
+handle: images
+hasTitleField: true
+icon: images
+name: Bilder
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  - ecdde3a3-5dd0-4fd9-9c08-03b0a6dc6076 # Demo
+handle: demo
+maxAuthors: 1
+name: Demo
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre Eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  b770f7e5-3411-4c52-91e3-c5929d334207: # CraftDev
+    enabledByDefault: true
+    hasUrls: true
+    template: demo/_entry
+    uriFormat: 'demo/{slug}'
+type: channel

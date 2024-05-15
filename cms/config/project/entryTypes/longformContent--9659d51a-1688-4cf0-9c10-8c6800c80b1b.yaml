@@ -1,0 +1,65 @@
+color: violet
+fieldLayouts:
+  52a116cf-3ec7-4d4b-bd51-6b9d762fef7d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e97538eb-1b75-4644-966b-244669c6c396
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b4d53fb2-a22c-406d-a41c-9f758ab575bd # Longform Inhalt
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89275720-a189-4c77-9cff-860fbf1113b2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 5319c94f-57c3-43a6-ae97-35aa1efb127c
+        userCondition: null
+handle: longformContent
+hasTitleField: true
+icon: face-relieved
+name: 'Longform Content'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
