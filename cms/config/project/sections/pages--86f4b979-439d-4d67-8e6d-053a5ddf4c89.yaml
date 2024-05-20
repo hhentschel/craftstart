@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - fc95636f-567a-49fe-a410-86de9a5ea3cc # Landingpage
+  - fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510 # Blog-Overview
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  b770f7e5-3411-4c52-91e3-c5929d334207: # CraftDev
+    enabledByDefault: true
+    hasUrls: true
+    template: _routers/router--page.twig
+    uriFormat: 'pages/{slug}'
+structure:
+  maxLevels: null
+  uid: f52e267f-16cb-439c-941c-437b5050b951
+type: structure

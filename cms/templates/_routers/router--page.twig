@@ -1,0 +1,49 @@
+{% extends '_boilerplate/_layouts/generic-page-layout' %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% set view = null %}
+
+{% if entry ??? null %}
+  {% switch entry.type %}
+
+      {% case 'blog' %}
+      {% set view = '_views/view--detail' %}
+
+      {% case 'blogOverview' %}
+      {% set view = '_views/view--overview' %}
+
+      {% case 'landingpage' %}
+      {% set view = '_views/view--page-landing' %}
+
+      {% endswitch %}
+
+{% endif %}
+
+{% block content %}
+
+{% if entry ??? null %}
+  {% if view %}
+    {%- include view ignore missing -%}
+  {% endif %}
+
+{% endif %}
+
+
+{% endblock %}
+
+
+
+{# -- Critical CSS -- #}
+{%- block criticalCss -%}
+    {%- if view -%}
+        {{ craft.vite.includeCriticalCssTags(view) }}
+    {%- endif -%}
+{%- endblock -%}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

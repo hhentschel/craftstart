@@ -1,0 +1,29 @@
+{%- set props = collect({
+    active: options.active ??? false,
+    disabled: options.disabled ??? false,
+    ga: options.ga ??? null,
+    text: options.text ??? '',
+    url: options.url ??? null,
+    utilities: options.utilities ??? null,
+}) -%}
+
+{%- set classes = collect({
+        default: 'inline-flex justify-center items-center rounded-full whitespace-nowrap no-underline gap-x-2',
+        animation: 'transition-colors duration-200 ease-in-out',
+        color: 'bg-viridian-500 text-white',
+        cursor: 'cursor-pointer',
+        focus: 'focus:ring-4 focus:ring-celestial-500 focus:outline-none',
+        font: 'font-primary leading-8 font-medium',
+        hover: 'hover:bg-viridian-700',
+        disabled: 'disabled:bg-concrete-300 disabled:color-concrete-700',
+        utilities: props.get('utilities'),
+    }) -%}
+
+{%- minify -%}
+    <a
+        {{ props.get('url') ? 'href=' ~ props.get('url') : '' }}
+        class="{{- classes.implode(' ') -}}"
+    >
+      {{ props.get('text')}}
+    </a>
+{%- endminify -%}

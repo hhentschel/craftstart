@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 9522a7a6-0ee3-42e2-a4b4-bd2f691c2c4d # Blog
+handle: blog
+maxAuthors: 1
+name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre Eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  b770f7e5-3411-4c52-91e3-c5929d334207: # CraftDev
+    enabledByDefault: true
+    hasUrls: true
+    template: _routers/router--page.twig
+    uriFormat: 'blog/{slug}'
+type: channel

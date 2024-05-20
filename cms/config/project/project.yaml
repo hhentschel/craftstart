@@ -1,13 +1,27 @@
-dateModified: 1715683945
+dateModified: 1715774256
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    86f4b979-439d-4d67-8e6d-053a5ddf4c89: Pages # Pages
     99a58225-3f4f-4a3b-a338-35e1fda743ef: CraftDev # CraftDev
+    9522a7a6-0ee3-42e2-a4b4-bd2f691c2c4d: Blog # Blog
     b770f7e5-3411-4c52-91e3-c5929d334207: CraftDev # CraftDev
+    e59a750b-bacf-4308-8042-1d484a6248ac: Blog # Blog
+    e96d7c98-3659-4dac-834a-9b3875e19d3b: Simple # Simple
+    fc95636f-567a-49fe-a410-86de9a5ea3cc: Landingpage # Landingpage
+    fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510: Blog-Overview # Blog-Overview
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  empty-coalesce:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   minify:
     edition: standard
     enabled: true

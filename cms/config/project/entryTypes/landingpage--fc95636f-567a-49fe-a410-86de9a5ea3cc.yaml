@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  7fd73d1e-3e28-4ae8-a944-395844ce34be:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: bf8e2c11-d6f3-400a-ad76-6b285ec8e3d4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9c529e12-49bc-4f9b-9453-276ad53712c0
+        userCondition: null
+handle: landingpage
+hasTitleField: true
+icon: ''
+name: Landingpage
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

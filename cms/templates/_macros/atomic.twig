@@ -1,0 +1,19 @@
+{#
+    # Atomic
+    # @package   paudigital\craft
+    # @since     1.0.0
+    # @author    Pau.digtal
+    # @link      https://pau.be
+    # @copyright Copyright (c) 2022 Pau
+    # @license   MIT
+    # @license   https://opensource.org/licenses/MIT MIT Licensed
+    #}
+
+
+{% macro atom(type, atom, options, prefix = '') %}
+    {% apply spaceless %}
+        {% include '_atoms/' ~ type ~ 's/' ~ prefix ~ type ~ '--' ~ atom with {
+            options: options,
+        } %}
+    {% endapply %}
+{% endmacro %}
