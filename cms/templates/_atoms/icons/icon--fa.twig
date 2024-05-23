@@ -1,0 +1,16 @@
+{%- extends '_atoms/icons/_icon--props' -%}
+
+{%- block icon -%}
+    {%- set classes = collect({
+        display: 'inline-flex items-center',
+        font : props.get('size').icon,
+        utilities: props.get('utilities'),
+        color: props.get('color').text ??? 'text-initial',
+    }) -%}
+
+    {%- minify -%}
+        <span class="{{- classes.implode(' ') -}}">
+            <i class="{{- props.type ??? '' }} {{ props.icon ??? '' -}}"></i>
+        </span>
+    {%- endminify -%}
+{%- endblock -%}

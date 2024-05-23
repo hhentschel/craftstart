@@ -1,29 +1,38 @@
-{%- set props = collect({
-    active: options.active ??? false,
-    disabled: options.disabled ??? false,
-    ga: options.ga ??? null,
-    text: options.text ??? '',
-    url: options.url ??? null,
-    utilities: options.utilities ??? null,
-}) -%}
+{%- extends '_atoms/buttons/_button--props' -%}
+{%- import '_macros/atomic' as atoms -%}
 
-{%- set classes = collect({
+{%- block button -%}
+
+    {%- set classes = collect({
         default: 'inline-flex justify-center items-center rounded-full whitespace-nowrap no-underline gap-x-2',
+        padding: 'px-8 py-4',
+        position: props.get('iconPosition') == null ? 'flex-row-reverse' : (props.get('iconPosition') == 'after' ? 'flex-row' : 'flex-row-reverse'),
         animation: 'transition-colors duration-200 ease-in-out',
-        color: 'bg-viridian-500 text-white',
+        color: 'bg-sky-700 text-white',
         cursor: 'cursor-pointer',
         focus: 'focus:ring-4 focus:ring-celestial-500 focus:outline-none',
         font: 'font-primary leading-8 font-medium',
-        hover: 'hover:bg-viridian-700',
-        disabled: 'disabled:bg-concrete-300 disabled:color-concrete-700',
+        hover: 'hover:bg-green-900',
+        disabled: 'disabled:bg-slate-300 disabled:color-slate-700',
         utilities: props.get('utilities'),
     }) -%}
 
-{%- minify -%}
-    <a
-        {{ props.get('url') ? 'href=' ~ props.get('url') : '' }}
-        class="{{- classes.implode(' ') -}}"
-    >
-      {{ props.get('text')}}
-    </a>
-{%- endminify -%}
+    {%- minify -%}
+        <a
+            {{ props.get('url') ? 'href=' ~ props.get('url') : '' }}
+            {{ props.get('target') ? 'target=' ~ props.get('target') : '' }}
+            class="{{- classes.implode(' ') -}}"
+        >
+        <span>
+            {{ props.get('text')}}
+        </span>
+        {%- if props.get('icon') -%}
+            {{- atoms.atom('icon', 'fa', {
+                type: props.get('icon').type,
+                icon: props.get('icon').icon,
+            }) -}}
+        {%- endif -%}
+        </a>
+    {%- endminify -%}
+
+{%- endblock -%}

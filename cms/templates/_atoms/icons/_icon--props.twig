@@ -1,0 +1,114 @@
+{#
+    ### PROPERTIES ###
+    ------------------
+    size: (STR) -- the size of the svg
+    utilities: (STR) -- the svg utilities
+#}
+
+{%- set sizes = collect({
+    current: {
+        icon: '',
+        box: '',
+    },
+    xs: {
+        icon: 'text-xs',
+        box: '',
+    },
+    sm: {
+        icon: 'text-sm',
+    },
+    base: {
+        icon: 'text-base',
+        box: '',
+    },
+    xl: {
+        icon: 'text-xl',
+        box: 'w-13 h-13',
+    },
+    '2xl': {
+        icon: 'text-2xl',
+        box: '',
+    },
+    '3xl': {
+        icon: 'text-3xl',
+        box: '',
+    },
+    '4xl': {
+        icon: 'text-4xl',
+        box: '',
+    },
+    '5xl': {
+        icon: 'text-5xl',
+        box: '',
+    },
+    '6xl': {
+        icon: 'text-6xl',
+        box: '',
+    },
+    '7xl': {
+        icon: 'text-7xl',
+        box: '',
+    },
+    '8xl': {
+        icon: 'text-8xl',
+        box: '',
+    },
+    '9xl': {
+        icon: 'text-9xl',
+        box: '',
+    },
+}) -%}
+
+{%- set colors = collect({
+    'current': collect({
+        text: 'text-initial',
+        bg: 'bg-transparent',
+    }),
+    'black': collect({
+        text: 'text-black',
+        bg: 'bg-white',
+    }),
+    'sky': collect({
+        text: 'text-sky-700',
+        bg: 'bg-sky-200',
+    }),
+    'teal': collect({
+        text: 'text-teal-500',
+        bg: 'bg-teal-300',
+    }),
+    'slate': collect({
+        text: 'text-slate-700',
+        bg: 'bg-slate-200',
+    }),
+    'emerald': collect({
+        text: 'text-emerald-700',
+        bg: 'bg-emerald-200',
+    }),
+    'indigo': collect({
+        text: 'text-indigo-300',
+        bg: 'bg-indigo-200',
+    }),
+    'fuchsia': collect({
+        text: 'text-fuchsia-700',
+        bg: 'bg-fuchsia-200',
+    }),
+    'orange': collect({
+        text: 'text-orange-500',
+        bg: 'bg-orange-200',
+    }),
+    'white': collect({
+        text: 'text-white',
+        bg: 'bg-black',
+    }),
+}) -%}
+
+{%- set props = collect({
+    color: colors[options.color ??? 'current'],
+    size: sizes[options.size ??? 'base'],
+    utilities: options.utilities ??? null,
+    type: options.type ??? null,
+    icon: options.icon ??? null,
+}) -%}
+
+{%- block icon -%}
+{%- endblock -%}

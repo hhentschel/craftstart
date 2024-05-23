@@ -22,6 +22,7 @@
     "@builder.io/partytown": "^0.3.6",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@tailwindcss/aspect-ratio": "latest",
     "@tailwindcss/typography": "latest",

@@ -1,0 +1,13 @@
+{%- set props = collect({
+  ga: options.ga ??? null,
+  icon: options.icon ??? null,
+  target: options.target ??? (siteUrl in (options.url ??? '') ? '_self' : '_blank'),
+  text: options.text ??? '',
+  url: options.url ??? null,
+  utilities: options.utilities ??? null,
+  icon: options.icon ??? null,
+  iconPosition: options.iconPosition ??? null,
+}) -%}
+
+{%- block button -%}
+{%- endblock -%}
