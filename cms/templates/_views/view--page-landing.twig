@@ -1,0 +1,21 @@
+{{ entry.title }}
+
+{% set image = entry.imageHero.collect.first %}
+
+{{ image }}
+
+{{ image.imageHeroOptimized.pictureTag()
+  .placeholder('image')
+  .imgAttrs
+    ({
+      'sizes': '100vw',
+      'alt': image.title,
+      'class': 'aspect-auto',
+    })
+  .pictureAttrs
+    ({
+
+    })
+  .loadingStrategy('lazy')
+  .render()
+}}
