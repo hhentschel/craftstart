@@ -1,16 +1,47 @@
-dateModified: 1715774256
+dateModified: 1717511328
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  contentimages:
+    hasUrls: true
+    name: 'Content Images'
+    settings:
+      path: '@webroot/dist/images'
+    type: craft\fs\Local
+    url: '@web/dist/images'
+  heroImages:
+    hasUrls: true
+    name: 'Hero Images'
+    settings:
+      path: '@webroot/dist/images'
+    type: craft\fs\Local
+    url: '@web/dist/images'
+  teaserImages:
+    hasUrls: true
+    name: 'Teaser Images'
+    settings:
+      path: '@webroot/dist/images'
+    type: craft\fs\Local
+    url: '@web/dist/images'
 meta:
   __names__:
+    5ba7464f-2767-483b-8cdb-a89f28b8c6cf: 'Image Teaser' # Image Teaser
+    7f7786f6-16c1-492d-a101-0056402404ef: 'Image Teaser Optimized' # Image Teaser Optimized
     86f4b979-439d-4d67-8e6d-053a5ddf4c89: Pages # Pages
     99a58225-3f4f-4a3b-a338-35e1fda743ef: CraftDev # CraftDev
+    1230e3f3-1ac1-4b89-9150-35cbf1f39ff2: 'Image Hero Optimized' # Image Hero Optimized
     9522a7a6-0ee3-42e2-a4b4-bd2f691c2c4d: Blog # Blog
     b770f7e5-3411-4c52-91e3-c5929d334207: CraftDev # CraftDev
+    bdf32217-a781-41f4-8a9d-ba623b04e90a: 'Image Content' # Image Content
+    ca23ec94-c45c-4713-b3e5-5d8de0457e74: 'ImageOptimize - Hero' # ImageOptimize - Hero
+    cbacf1e2-321f-4024-a6b0-5159a7fa227c: 'ImageOptimize - Content' # ImageOptimize - Content
+    e3a20fd6-f305-4542-8ad7-f6ed6607137d: 'ImageOptimize - Teaser' # ImageOptimize - Teaser
+    e57dd80e-fbbb-45c8-9086-b5a5368c2429: 'Image Hero' # Image Hero
     e59a750b-bacf-4308-8042-1d484a6248ac: Blog # Blog
     e96d7c98-3659-4dac-834a-9b3875e19d3b: Simple # Simple
+    eda1d68b-3d84-43a4-8e0b-88fccb194079: 'Image Content Optimized' # Image Content Optimized
     fc95636f-567a-49fe-a410-86de9a5ea3cc: Landingpage # Landingpage
     fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510: Blog-Overview # Blog-Overview
 plugins:
@@ -22,7 +53,61 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  image-optimize:
+    edition: standard
+    enabled: true
+    licenseKey: IK1W8HDR7QSTOFREMNEVPXEC
+    schemaVersion: 1.0.0
+    settings:
+      allowUpScaledImageVariants: false
+      assetVolumeSubFolders: true
+      autoSharpenScaledImages: true
+      capSilhouetteSvgSize: true
+      createColorPalette: true
+      createPlaceholderSilhouettes: true
+      imageTransformTypeSettings:
+        __assoc__:
+          -
+            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
+            -
+              __assoc__:
+                -
+                  - domain
+                  - ''
+                -
+                  - apiKey
+                  - ''
+                -
+                  - securityToken
+                  - ''
+                -
+                  - unsharpMask
+                  - '20'
+          -
+            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+          -
+            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+                -
+                  - securityKey
+                  - ''
+      lowerQualityRetinaImageVariants: true
+      sharpenScaledImagePercentage: 50
+      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
   minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typogrify:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

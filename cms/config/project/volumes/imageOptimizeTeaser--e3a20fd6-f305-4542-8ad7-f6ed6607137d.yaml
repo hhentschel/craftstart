@@ -1,6 +1,7 @@
-color: null
+altTranslationKeyFormat: null
+altTranslationMethod: none
 fieldLayouts:
-  7fd73d1e-3e28-4ae8-a944-395844ce34be:
+  f939220b-4756-4847-ad14-6583e33d5a64:
     tabs:
       -
         elementCondition: null
@@ -29,14 +30,14 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: bf8e2c11-d6f3-400a-ad76-6b285ec8e3d4
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 740494d3-514c-4fc1-9c3d-ee845d5de79f
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: e57dd80e-fbbb-45c8-9086-b5a5368c2429 # Image Hero
+            fieldUid: 7f7786f6-16c1-492d-a101-0056402404ef # Image Teaser Optimized
             handle: null
             includeInCards: false
             instructions: null
@@ -45,21 +46,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: dc5a9ad0-78ca-4b18-96c5-5e651db903ce
+            uid: 9d9377fc-73d3-43aa-a9db-2fc8c29dae9e
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 9c529e12-49bc-4f9b-9453-276ad53712c0
+        uid: f8efb174-cd87-4185-8bd9-c0af2f4dd16a
         userCondition: null
-handle: landingpage
-hasTitleField: true
-icon: ''
-name: Landingpage
-showSlugField: true
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-titleFormat: ''
+fs: teaserImages
+handle: imageOptimizeTeaser
+name: 'ImageOptimize - Teaser'
+sortOrder: 3
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: teaserImages
+transformSubpath: ''

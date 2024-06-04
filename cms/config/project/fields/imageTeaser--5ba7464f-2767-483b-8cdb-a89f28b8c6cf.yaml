@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: imageTeaser
+instructions: null
+name: 'Image Teaser'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

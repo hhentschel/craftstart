@@ -1,6 +1,7 @@
-color: null
+altTranslationKeyFormat: null
+altTranslationMethod: none
 fieldLayouts:
-  7fd73d1e-3e28-4ae8-a944-395844ce34be:
+  1b2ce4f3-f492-40e6-aa1b-e160f64b74a6:
     tabs:
       -
         elementCondition: null
@@ -29,14 +30,14 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: bf8e2c11-d6f3-400a-ad76-6b285ec8e3d4
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 4f9a9096-eacd-4c85-b3fd-840580401aa4
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: e57dd80e-fbbb-45c8-9086-b5a5368c2429 # Image Hero
+            fieldUid: 1230e3f3-1ac1-4b89-9150-35cbf1f39ff2 # Image Hero Optimized
             handle: null
             includeInCards: false
             instructions: null
@@ -45,21 +46,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: dc5a9ad0-78ca-4b18-96c5-5e651db903ce
+            uid: 089db9e6-991b-489c-bd69-1be0bb0fcc08
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 9c529e12-49bc-4f9b-9453-276ad53712c0
+        uid: 856e6a90-3d48-4dcf-bfa4-f678cc40c74d
         userCondition: null
-handle: landingpage
-hasTitleField: true
-icon: ''
-name: Landingpage
-showSlugField: true
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-titleFormat: ''
+fs: heroImages
+handle: imageoptimizeHero
+name: 'ImageOptimize - Hero'
+sortOrder: 2
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: heroImages
+transformSubpath: ''
