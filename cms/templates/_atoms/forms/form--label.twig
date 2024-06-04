@@ -1,0 +1,27 @@
+{%- extends '_atoms/forms/_label--props' -%}
+{%- import '_macros/atomic' as atoms -%}
+
+
+{# size: 'text-xl md:text-h1-md lg:text-h1-lg', #}
+
+{#
+    ### PROPERTIES ###
+    ------------------
+
+    INHERITED FROM: `_atoms/texts/text--props.twig`
+#}
+
+{%- block label -%}
+    {%- set classes = collect({
+        color: props.get('color') ??? 'text-black',
+        font: 'font-primary',
+        size: 'text-base',
+        utilities: props.get('utilities'),
+    }) -%}
+
+    {%- minify -%}
+        <span class="{{ classes.implode(' ') }}">
+            {{- props.get('content')|striptags('<strong>')|typogrify(true)|raw -}}
+        </span>
+    {%- endminify -%}
+{%- endblock -%}
