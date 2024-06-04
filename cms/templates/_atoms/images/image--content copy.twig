@@ -1,0 +1,74 @@
+<figure>
+  <picture>
+    <source
+      {# the w parameter describes the width of the image #}
+       srcset="https://cdn.stocksnap.io/img-thumbs/960w/classic-camera_ZQN8PJHCP0.avif 576w,
+              https://cdn.stocksnap.io/img-thumbs/960w/abstract-wave_IYCGUILNRQ.avif 768w,
+              https://cdn.stocksnap.io/img-thumbs/960w/mountains-hiking_PIYB6U0OSJ.avif 1024w,
+              https://cdn.stocksnap.io/img-thumbs/960w/sea-ocean_UATLTQO3SG.avif 1280w,
+              https://cdn.stocksnap.io/img-thumbs/960w/sea-beach_UBIYERV8MD.avif 1440w"
+      sizes="(max-width: 576px) 100vw,
+            (min-width: 576px and max-width: 768px) 100vw,
+            (min-width: 768px and max-width: 1024px) 50vw,
+            {# If this condition is true
+              -> the viewport is between 1024 and 1280
+              -> then the image will take 50% of the viewport width
+              -> image size would be then between 512px and 640px
+              -> hence it would take the first picture with the 576w parameter
+
+             #}
+            (min-width: 1024px and max-width: 1280px) 50vw,
+            (min-width: 1280px and max-width: 1440px) 25vw,
+            (min-width: 1440px) 25vw"
+            type="image/avif">
+    <source
+       srcset="https://cdn.stocksnap.io/img-thumbs/960w/classic-camera_ZQN8PJHCP0.webp 576w,
+              https://cdn.stocksnap.io/img-thumbs/960w/abstract-wave_IYCGUILNRQ.webp 768w,
+              https://cdn.stocksnap.io/img-thumbs/960w/mountains-hiking_PIYB6U0OSJ.webp 1024w,
+              https://cdn.stocksnap.io/img-thumbs/960w/sea-ocean_UATLTQO3SG.webp 1280w,
+              https://cdn.stocksnap.io/img-thumbs/960w/sea-beach_UBIYERV8MD.webp 1440w"
+      sizes="(max-width: 576px) 100vw,
+            (min-width: 576px and max-width: 768px) 100vw,
+            (min-width: 768px and max-width: 1024px) 50vw,
+            (min-width: 1024px and max-width: 1280px) 50vw,
+            (min-width: 1280px and max-width: 1440px) 25vw,
+            (min-width: 1440px) 25vw"
+            type="image/webp">
+    <img
+      src=""
+      srcset="https://cdn.stocksnap.io/img-thumbs/960w/classic-camera_ZQN8PJHCP0.jpg 576w,
+              https://cdn.stocksnap.io/img-thumbs/960w/abstract-wave_IYCGUILNRQ.jpg 768w,
+              https://cdn.stocksnap.io/img-thumbs/960w/mountains-hiking_PIYB6U0OSJ.jpg 1024w,
+              https://cdn.stocksnap.io/img-thumbs/960w/sea-ocean_UATLTQO3SG.jpg 1280w,
+              https://cdn.stocksnap.io/img-thumbs/960w/sea-beach_UBIYERV8MD.jpg 1440w"
+      sizes="(max-width: 576px) 100vw,
+            (min-width: 576px and max-width: 768px) 100vw,
+            (min-width: 768px and max-width: 1024px) 50vw,
+            (min-width: 1024px and max-width: 1280px) 50vw,
+            (min-width: 1280px and max-width: 1440px) 25vw,
+            (min-width: 1440px) 25vw"
+      fetchpriority="high"
+      width="1000px"
+      height="500px"
+      alt=""
+      class="bg-stone-300"
+      loading="lazy" />
+  </picture>
+  <figcaption></figcaption>
+</figure>
+
+
+{#
+
+https://cdn.stocksnap.io/img-thumbs/960w/classic-camera_ZQN8PJHCP0.jpg
+
+https://cdn.stocksnap.io/img-thumbs/960w/abstract-wave_IYCGUILNRQ.jpg
+
+https://cdn.stocksnap.io/img-thumbs/960w/mountains-hiking_PIYB6U0OSJ.jpg
+
+https://cdn.stocksnap.io/img-thumbs/960w/sea-ocean_UATLTQO3SG.jpg
+
+https://cdn.stocksnap.io/img-thumbs/960w/sea-beach_UBIYERV8MD.jpg
+
+#}
+
