@@ -1,1 +1,36 @@
+
+{%- import '_macros/atomic' as atoms -%}
+
+
 {{ entry.title }}
+
+{% block headLinks %}
+    {% set image = entry.imageContent.collect.first %}
+    {{ image.imageContentOptimized.linkPreloadTag().render() }}
+{% endblock headLinks %}
+
+
+  {# <div class="flex justify-center">
+      {{- atoms.atom('image', 'content', 'image',{
+        {{ 'image' : 'image' }}
+      }) -}}
+  </div> #}
+
+
+{% set image = entry.imageContent.collect.first %}
+
+{{ image.imageContentOptimized.pictureTag()
+  .placeholder('image')
+  .imgAttrs
+    ({
+      'sizes': '50vw',
+      'alt': image.title,
+      'class': 'aspect-auto',
+    })
+  .pictureAttrs
+    ({
+
+    })
+  .loadingStrategy('lazy')
+  .render()
+}}
