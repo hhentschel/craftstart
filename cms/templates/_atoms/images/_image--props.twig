@@ -1,0 +1,17 @@
+
+{%- set props = collect({
+    alt: options.alt ??? options.image.title ??? '',
+    caption: options.caption ??? null,
+    credits: options.credits ??? null,
+    placeholder: options.placeholder ??? 'image',
+    loadingStrategy: options.loadingStrategy ??? ['eager'],
+    image: options.image ??? null,
+    sizes: options.sizes ??? ['100vw'],
+    source: options.source ??? null,
+    utilities: options.utilities ??? null,
+    utilitiesImage: options.utilitiesImage ??? null,
+    utilitiesPicture: options.utilitiesPicture ??? null,
+}) -%}
+
+{%- block image -%}
+{%- endblock -%}
