@@ -1,0 +1,13 @@
+{%- extends '_organisms/footers/_footer--props' -%}
+{%- import '_macros/organic' as organisms -%}
+
+
+{% block footer %}
+{{- organisms.organism('footer', 'content', {
+    content: 'Footer',
+    color: 'text-green',
+    utilities: 'bg-blue-900',
+}) -}}
+
+
+{% endblock %}
