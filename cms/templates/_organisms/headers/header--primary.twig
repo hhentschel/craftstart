@@ -1,0 +1,12 @@
+{%- extends '_organisms/headers/_header--props' -%}
+{%- import '_macros/organic' as organisms -%}
+{%- import '_macros/atomic' as atoms -%}
+
+
+{% block header %}
+    {{- organisms.organism('header', 'content', {
+        content: 'Header',
+        color: 'text-yellow',
+        utilities: 'bg-blue-100',
+    }) -}}
+{% endblock %}

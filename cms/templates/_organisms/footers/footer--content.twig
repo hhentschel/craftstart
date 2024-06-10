@@ -1,0 +1,28 @@
+
+
+
+{%- extends '_organisms/footers/_footer--props' -%}
+{%- import '_macros/atomic' as atoms -%}
+
+
+{#
+    ### PROPERTIES ###
+    ------------------
+
+    INHERITED FROM: `_organisms/footers/_footer--props.twig`
+#}
+
+{%- block footer -%}
+    {%- set classes = collect({
+        color: props.get('color') ??? 'text-white',
+        font: 'font-primary',
+        size: 'text-h1-sm md:text-h1-md lg:text-h1-lg',
+        utilities: props.get('utilities'),
+    }) -%}
+
+    {%- minify -%}
+        <footer class="{{ classes.implode(' ') }}">
+            {{- props.get('content')|striptags('<strong>')|typogrify()|raw -}}
+        </footer>
+    {%- endminify -%}
+{%- endblock -%}

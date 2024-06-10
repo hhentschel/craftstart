@@ -1,0 +1,20 @@
+{%- extends '_organisms/headers/_header--props' -%}
+{%- import '_macros/organic' as organisms -%}
+{%- import '_macros/atomic' as atoms -%}
+
+{%- block header -%}
+    {%- set classes = collect({
+        color: props.get('color') ??? 'text-black',
+        font: 'font-primary',
+        size: 'text-h1-sm md:text-h1-md lg:text-h1-lg',
+        utilities: props.get('utilities'),
+    }) -%}
+
+    {%- minify -%}
+        <header class="{{ classes.implode(' ') }}">
+                {{- props.get('content')|striptags('<strong>')|typogrify()|raw -}}
+
+
+        </header>
+    {%- endminify -%}
+{%- endblock -%}
