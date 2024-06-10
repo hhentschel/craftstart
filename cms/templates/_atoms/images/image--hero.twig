@@ -8,19 +8,19 @@
 
 
 {% minify %}
-{{ image.imageContentOptimized.pictureTag()
+{{ image.imageHeroOptimized.pictureTag()
   .imgAttrs
     ({
       'sizes': props.get('sizes'),
       'alt': props.get('alt') ??? image.title ??? null,
-      'class': "object-cover aspect-square #{props.get('utilitiesImage')}",
+      'class': "object-cover #{props.get('utilitiesImage')}",
       'fetchpriority': 'high'
     })
   .pictureAttrs
     ({
        'class': props.get('utilitiesPicture'),
     })
-    .placeholder("#{props.get('placeholder')}")
+  .placeholder("#{props.get('placeholder')}")
   .loadingStrategy("#{props.get('loadingStrategy')}")
   .render()
 }}
