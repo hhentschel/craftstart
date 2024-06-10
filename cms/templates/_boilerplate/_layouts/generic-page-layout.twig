@@ -30,12 +30,16 @@
 {% block bodyHtml %}
 
     <div id="page-wrapper">
+
+            {# -- Header -- #}
+            {%- include '_organisms/headers/header--primary' ignore missing -%}
+
         {# -- Navigation --  #}
         {%- include '_organisms/navigations/navigation--primary' ignore missing with {
             navigation: null
         } -%}
-
         <main class="flex flex-col min-h-screen" id="page-content">
+
             {# -- Primary content block -- #}
             <div id="page" w-ref="page">
                 {% block content %}
