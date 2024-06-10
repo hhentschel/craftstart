@@ -1,4 +1,4 @@
-dateModified: 1717511328
+dateModified: 1718049561
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
@@ -27,14 +27,19 @@ fs:
     url: '@web/dist/images'
 meta:
   __names__:
+    4a627350-c333-49de-978e-b756cd988db7: Home # Home
     5ba7464f-2767-483b-8cdb-a89f28b8c6cf: 'Image Teaser' # Image Teaser
     7f7786f6-16c1-492d-a101-0056402404ef: 'Image Teaser Optimized' # Image Teaser Optimized
     86f4b979-439d-4d67-8e6d-053a5ddf4c89: Pages # Pages
     99a58225-3f4f-4a3b-a338-35e1fda743ef: CraftDev # CraftDev
     1230e3f3-1ac1-4b89-9150-35cbf1f39ff2: 'Image Hero Optimized' # Image Hero Optimized
     9522a7a6-0ee3-42e2-a4b4-bd2f691c2c4d: Blog # Blog
+    867399f9-5cee-4f95-836b-a04cc7bc2639: Header # Header
+    a2c173c5-4b31-4338-86ee-a0cb4aafc12b: Home # Home
+    b3f3c321-3167-4f74-8f3e-a3a6a7b75f96: Description # Description
     b770f7e5-3411-4c52-91e3-c5929d334207: CraftDev # CraftDev
     bdf32217-a781-41f4-8a9d-ba623b04e90a: 'Image Content' # Image Content
+    c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f: Header # Header
     ca23ec94-c45c-4713-b3e5-5d8de0457e74: 'ImageOptimize - Hero' # ImageOptimize - Hero
     cbacf1e2-321f-4024-a6b0-5159a7fa227c: 'ImageOptimize - Content' # ImageOptimize - Content
     e3a20fd6-f305-4542-8ad7-f6ed6607137d: 'ImageOptimize - Teaser' # ImageOptimize - Teaser

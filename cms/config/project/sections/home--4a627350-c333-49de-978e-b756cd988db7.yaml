@@ -1,11 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - fc95636f-567a-49fe-a410-86de9a5ea3cc # Landingpage
-  - fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510 # Blog-Overview
-handle: pages
+  - a2c173c5-4b31-4338-86ee-a0cb4aafc12b # Home
+handle: home
 maxAuthors: 1
-name: Pages
+name: Home
 previewTargets:
   -
     __assoc__:
@@ -24,8 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _routers/router--page.twig
-    uriFormat: '{slug}'
-structure:
-  maxLevels: null
-  uid: f52e267f-16cb-439c-941c-437b5050b951
-type: structure
+    uriFormat: __home__
+type: single

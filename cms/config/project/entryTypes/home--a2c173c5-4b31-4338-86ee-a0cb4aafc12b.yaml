@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  54617db6-5d0b-4f50-b5ac-5e5dd6b296e6:
+  16ce9aaa-656d-4539-9c9e-97e9242e4bf9:
     tabs:
       -
         elementCondition: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 98f30c8c-cd0c-4f1d-90f9-81e2ffabc798
+            uid: a3aee760-91af-443c-a992-2af55fd97f3f
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: b3f3c321-3167-4f74-8f3e-a3a6a7b75f96 # Description
+            fieldUid: e57dd80e-fbbb-45c8-9086-b5a5368c2429 # Image Hero
             handle: null
             includeInCards: false
             instructions: null
@@ -45,32 +45,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: bec645d2-84ec-4940-a539-f88f6585b670
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 5ba7464f-2767-483b-8cdb-a89f28b8c6cf # Image Teaser
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 624c11d9-1217-4bc8-96e9-16bae3a0b501
+            uid: ec857fce-7a21-4e98-8f41-4aa89d0b144a
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 9eac994a-e74a-43ce-b215-cd3dffcf31bc
+        uid: 62546cb3-3b56-4a0b-a2ff-a03206f9462f
         userCondition: null
-handle: blog
+handle: home
 hasTitleField: true
 icon: ''
-name: Blog
+name: Home
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
