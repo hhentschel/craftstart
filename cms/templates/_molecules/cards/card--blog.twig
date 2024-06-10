@@ -1,0 +1,36 @@
+{%- extends '_molecules/cards/_card--props' -%}
+{%- import '_macros/atomic' as atoms -%}
+
+{%- block card -%}
+    {%- minify -%}
+        <article class="flex flex-col space-y-4 rounded  shadow-lg px-8 py-10 {{ props.get('utilities')}}">
+            {# IMAGE #}
+             {{- atoms.atom('image', 'teaser',  {
+                  image: props.get('teaser'),
+                  sizes: '50vw',
+                  placeholder: 'silhouette',
+                  loadingStrategy: 'lazy'
+              }) -}}
+
+            <div class="flex flex-col space-y-2.5">
+                {# HEADING #}
+                {{- atoms.atom('text', 'content',  {
+                  content: props.get('heading'),
+                  utilities: 'font-bold mb-2'
+                }) -}}
+
+                 {{- atoms.atom('text', 'content',  {
+                  content: props.get('description'),
+                  utilities: 'text-gray-700 text-base'
+                }) -}}
+            </div>
+
+            {# BUTTON #}
+             {{- atoms.atom('button', 'primary', {
+                text: 'Read more',
+                url: props.get('url'),
+                utilities: 'bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded',
+            }) -}}
+        </article>
+    {%- endminify -%}
+{%- endblock -%}
