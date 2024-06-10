@@ -1,0 +1,22 @@
+{%- extends '_organisms/grids/_grid--props' -%}
+{%- import '_macros/atomic' as atoms -%}
+
+{%- block grid -%}
+
+    <section class="">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-xl mx-auto container">
+            {%- for card in props.get('cards') -%}
+                {%- include '_molecules/cards/card--blog' with {
+                    heading: card.title,
+                    description: card.description,
+                    teaser: card.imageTeaser.eagerly().collect.first,
+                    url: card.url,
+                    utilities: loop.index is odd ? 'col-span-2',
+                } -%}
+            {%- endfor -%}
+        </div>
+
+    </section>
+
+{%- endblock -%}
