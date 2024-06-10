@@ -10,27 +10,8 @@
 {% endblock headLinks %}
 
 
-  {# <div class="flex justify-center">
-      {{- atoms.atom('image', 'content', 'image',{
-        {{ 'image' : 'image' }}
-      }) -}}
-  </div> #}
-
-
-{% set image = entry.imageContent.collect.first %}
-
-{{ image.imageContentOptimized.pictureTag()
-  .placeholder('image')
-  .imgAttrs
-    ({
-      'sizes': '50vw',
-      'alt': image.title,
-      'class': 'aspect-auto',
-    })
-  .pictureAttrs
-    ({
-
-    })
-  .loadingStrategy('lazy')
-  .render()
-}}
+  <div class="">
+  {%- include '_organisms/grids/grid--blog' with {
+      cards: craft.entries.section('blog').eagerly().collect.all(),
+  } -%}
+  </div>

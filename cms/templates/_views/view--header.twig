@@ -1,0 +1,12 @@
+{%- import '_macros/atomic' as atoms -%}
+
+{{ entry.title }}
+
+
+ {{- atoms.atom('image', 'hero',  {
+    image: entry.imageHero.eagerly().collect.first,
+    sizes: '100vw',
+    placeholder: 'silhouette',
+    loadingStrategy: 'eager',
+}) -}}
+    {# utilitiesImage: 'absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center' #}
