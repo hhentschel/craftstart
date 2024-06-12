@@ -1,0 +1,19 @@
+{%- import '_macros/atomic' as atoms -%}
+
+{{ entry.title }}
+
+{% for item in entry.relatedEntries.all() %}
+
+    {{ item.title }}
+
+    {{- atoms.atom('image', 'teaser',  {
+    image: item.imageTeaser.one(),
+    sizes: '50vw',
+    placeholder: 'silhouette',
+    loadingStrategy: 'lazy',
+    caption: item.caption
+}) -}}
+
+
+
+{% endfor %}

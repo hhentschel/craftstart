@@ -10,8 +10,34 @@
 {% endblock headLinks %}
 
 
-  <div class="">
+{% for block in entry.contentBuilder.all() %}
+  {% switch block.type %}
+
+    {% case "cta" %}
+      {{ block.render() }}
+
+    {% case "images" %}
+      {{ block.render() }}
+
+    {% case "featureList" %}
+      {{ block.render({ loop, themeColor: "lightblue" }) }}
+
+    {% case "relatedEntries" %}
+     {{ block.render() }}
+
+    {% case "table" %}
+      {{ block.render() }}
+
+    {% default %}
+
+
+  {% endswitch %}
+
+{% endfor %}
+
+
+  {# <div class="">
   {%- include '_organisms/grids/grid--blog' with {
       cards: craft.entries.section('blog').eagerly().collect.all(),
   } -%}
-  </div>
+  </div> #}

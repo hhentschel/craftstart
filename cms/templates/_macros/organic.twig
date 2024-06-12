@@ -1,0 +1,19 @@
+{#
+    # Atomic
+    # @package   paudigital\craft
+    # @since     1.0.0
+    # @author    Pau.digtal
+    # @link      https://pau.be
+    # @copyright Copyright (c) 2022 Pau
+    # @license   MIT
+    # @license   https://opensource.org/licenses/MIT MIT Licensed
+    #}
+
+
+{% macro organism(type, organism, options, prefix = '') %}
+    {% apply spaceless %}
+        {% include '_organisms/' ~ type ~ 's/' ~ prefix ~ type ~ '--' ~ organism with {
+            options: options,
+        } %}
+    {% endapply %}
+{% endmacro %}

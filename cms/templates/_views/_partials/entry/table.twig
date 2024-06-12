@@ -1,0 +1,12 @@
+{{ entry.title }}
+
+<table class="table-fixed tw-full">
+  <tbody>
+    {% for info in entry.simpleTable %}
+      <tr>
+        <th>{{ info.name}}</th>
+        <td>{{ info.value}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

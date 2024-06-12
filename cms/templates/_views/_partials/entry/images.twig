@@ -1,0 +1,8 @@
+{%- import '_macros/atomic' as atoms -%}
+
+{{- atoms.atom('image', 'content',  {
+    image: entry.imageContent.one(),
+    sizes: '50vw',
+    placeholder: 'silhouette',
+    loadingStrategy: 'lazy'
+}) -}}
