@@ -1,4 +1,4 @@
-color: null
+color: orange
 fieldLayouts:
   54617db6-5d0b-4f50-b5ac-5e5dd6b296e6:
     tabs:
@@ -51,6 +51,36 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: e2f3b30c-2b00-465f-b42b-5b8e8e0ab107 # Rich Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Inhalt
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f050d24a-d6ff-4d3e-ae0f-4df0a18c22b4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f53223cc-170a-472c-9561-2f22df16bc96 # Longform Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9dd551a3-4a9a-438f-95e1-c49196d34862
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 5ba7464f-2767-483b-8cdb-a89f28b8c6cf # Image Teaser
             handle: null
             includeInCards: false
@@ -61,6 +91,21 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 624c11d9-1217-4bc8-96e9-16bae3a0b501
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9dc35b77-87de-4411-91b1-05d093c994b9 # Caption
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65a494e8-0ece-422e-9f32-7434e4ea9572
             userCondition: null
             warning: null
             width: 100

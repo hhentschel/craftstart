@@ -1,6 +1,6 @@
-color: null
+color: blue
 fieldLayouts:
-  c7961e08-149b-4841-beef-9fc1548dfa18:
+  03ce300d-cacd-41b0-aa31-666ee486e43c:
     tabs:
       -
         elementCondition: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 086d31f3-ce4c-4b47-8222-4da023307f44
+            uid: 9e7b263b-248d-4773-b8eb-7ae0a3745f19
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: bdf32217-a781-41f4-8a9d-ba623b04e90a # Image Content
+            fieldUid: 84dcc5df-eba0-4369-b9d6-d82865740798 # Simple Name Value Table
             handle: null
             includeInCards: false
             instructions: null
@@ -45,32 +45,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8ed2e243-40bd-4298-8705-46452e44dfd4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6a8579a0-7f72-41c9-9a9b-4d6d4f5ad746 # Content Builder
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ee707175-9958-4a1c-8b90-6576acee2e4b
+            uid: e48167eb-a76f-4fba-9916-1e4355a57121
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 997efcbf-e489-4605-b17d-df922007f924
+        uid: f9e67dcb-c782-42c8-ac01-74709defb3b0
         userCondition: null
-handle: blogOverview
+handle: table
 hasTitleField: true
-icon: ''
-name: Blog-Overview
+icon: table
+name: Tabelle
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

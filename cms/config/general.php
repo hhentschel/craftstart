@@ -25,4 +25,5 @@ return GeneralConfig::create()
         '@webroot' => dirname(__DIR__) . '/web',
         '@assetsUrl' => dirname(__DIR__) . '/web/dist',
     ])
+    ->partialTemplatesPath('/_views/_partials')
 ;

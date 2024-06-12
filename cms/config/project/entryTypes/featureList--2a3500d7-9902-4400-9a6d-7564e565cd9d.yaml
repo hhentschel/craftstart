@@ -1,6 +1,6 @@
-color: null
+color: fuchsia
 fieldLayouts:
-  c7961e08-149b-4841-beef-9fc1548dfa18:
+  86318236-b6b1-471d-a064-753341f30e02:
     tabs:
       -
         elementCondition: null
@@ -30,13 +30,28 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 086d31f3-ce4c-4b47-8222-4da023307f44
+            uid: f480bc85-d38a-4281-ae5c-eec612173763
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: bdf32217-a781-41f4-8a9d-ba623b04e90a # Image Content
+            fieldUid: 72555363-9815-48cd-bcce-d855765e7d66 # Plain Text
+            handle: featureListDescription
+            includeInCards: true
+            instructions: null
+            label: 'Feature List Description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4223091-2638-4fe1-b054-ad7ae70bbb1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3bc6942f-4e9a-4317-bb3c-72468b36c388 # Feature
             handle: null
             includeInCards: false
             instructions: null
@@ -45,34 +60,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8ed2e243-40bd-4298-8705-46452e44dfd4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6a8579a0-7f72-41c9-9a9b-4d6d4f5ad746 # Content Builder
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ee707175-9958-4a1c-8b90-6576acee2e4b
+            uid: 7b8a2f9a-315e-42ec-99e3-9a5a4a1e9497
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 997efcbf-e489-4605-b17d-df922007f924
+        uid: 90e374f9-8fd6-4e6e-8e21-e7953db56737
         userCondition: null
-handle: blogOverview
+handle: featureList
 hasTitleField: true
-icon: ''
-name: Blog-Overview
-showSlugField: true
-showStatusField: true
+icon: list-tree
+name: 'Feature List'
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: ''

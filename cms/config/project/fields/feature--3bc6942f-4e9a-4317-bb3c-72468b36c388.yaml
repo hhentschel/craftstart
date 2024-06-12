@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: feature
+instructions: null
+name: Feature
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 2b282624-7e65-477f-b41e-be03e7181f7f # Feature
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

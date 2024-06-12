@@ -1,4 +1,4 @@
-color: null
+color: red
 fieldLayouts:
   16ce9aaa-656d-4539-9c9e-97e9242e4bf9:
     tabs:
@@ -49,12 +49,27 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: e2f3b30c-2b00-465f-b42b-5b8e8e0ab107 # Rich Text
+            handle: HomeContent
+            includeInCards: false
+            instructions: null
+            label: Inhalt
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: feaeb598-e99d-40a4-a18d-7b96799f3365
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 62546cb3-3b56-4a0b-a2ff-a03206f9462f
         userCondition: null
 handle: home
 hasTitleField: true
-icon: ''
+icon: house
 name: Home
 showSlugField: true
 showStatusField: true

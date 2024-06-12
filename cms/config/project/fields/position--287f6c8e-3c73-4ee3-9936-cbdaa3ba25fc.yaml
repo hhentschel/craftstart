@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: position
+instructions: null
+name: Position
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Links
+        -
+          - value
+          - left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Mitte
+        -
+          - value
+          - center
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - value
+          - right
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

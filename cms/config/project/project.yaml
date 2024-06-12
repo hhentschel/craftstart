@@ -1,4 +1,4 @@
-dateModified: 1718049561
+dateModified: 1718205194
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
@@ -27,28 +27,49 @@ fs:
     url: '@web/dist/images'
 meta:
   __names__:
+    1a36346a-a82c-497b-acd5-df9e7b9d55b0: Menu # Menu
+    2a3500d7-9902-4400-9a6d-7564e565cd9d: 'Feature List' # Feature List
+    2b282624-7e65-477f-b41e-be03e7181f7f: Feature # Feature
+    3afe3600-f29a-4409-9b22-764f71a881c5: 'Rich Text' # Rich Text
+    3bc6942f-4e9a-4317-bb3c-72468b36c388: Feature # Feature
     4a627350-c333-49de-978e-b756cd988db7: Home # Home
     5ba7464f-2767-483b-8cdb-a89f28b8c6cf: 'Image Teaser' # Image Teaser
+    5c8dd4ed-8488-4d87-b11b-af5c7d46da6e: 'Longform Content' # Longform Content
+    6a8579a0-7f72-41c9-9a9b-4d6d4f5ad746: 'Content Builder' # Content Builder
     7f7786f6-16c1-492d-a101-0056402404ef: 'Image Teaser Optimized' # Image Teaser Optimized
+    9dc35b77-87de-4411-91b1-05d093c994b9: Caption # Caption
+    9f8d5177-949f-420b-be9a-2f552d514a68: Images # Images
+    26db054c-db10-4316-b753-0544f54f6710: 'Related Entries' # Related Entries
+    84ce4835-15b6-4400-af9c-f2815a462fb3: 'Related Entries' # Related Entries
+    84dcc5df-eba0-4369-b9d6-d82865740798: 'Simple Name Value Table' # Simple Name Value Table
     86f4b979-439d-4d67-8e6d-053a5ddf4c89: Pages # Pages
     99a58225-3f4f-4a3b-a338-35e1fda743ef: CraftDev # CraftDev
+    287f6c8e-3c73-4ee3-9936-cbdaa3ba25fc: Position # Position
     1230e3f3-1ac1-4b89-9150-35cbf1f39ff2: 'Image Hero Optimized' # Image Hero Optimized
+    7601d3fa-9b2e-43fb-9b7a-d31bdc9d1e90: Tabelle # Tabelle
     9522a7a6-0ee3-42e2-a4b4-bd2f691c2c4d: Blog # Blog
     867399f9-5cee-4f95-836b-a04cc7bc2639: Header # Header
+    72555363-9815-48cd-bcce-d855765e7d66: 'Plain Text' # Plain Text
     a2c173c5-4b31-4338-86ee-a0cb4aafc12b: Home # Home
     b3f3c321-3167-4f74-8f3e-a3a6a7b75f96: Description # Description
     b770f7e5-3411-4c52-91e3-c5929d334207: CraftDev # CraftDev
     bdf32217-a781-41f4-8a9d-ba623b04e90a: 'Image Content' # Image Content
     c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f: Header # Header
     ca23ec94-c45c-4713-b3e5-5d8de0457e74: 'ImageOptimize - Hero' # ImageOptimize - Hero
+    ca82ce19-1d0f-494a-b0e9-79eab0ba3665: CTA # CTA
     cbacf1e2-321f-4024-a6b0-5159a7fa227c: 'ImageOptimize - Content' # ImageOptimize - Content
+    ce11b004-8f79-48e1-b31b-dbcea3a241bb: Icon # Icon
+    e2f3b30c-2b00-465f-b42b-5b8e8e0ab107: 'Rich Text' # Rich Text
     e3a20fd6-f305-4542-8ad7-f6ed6607137d: 'ImageOptimize - Teaser' # ImageOptimize - Teaser
     e57dd80e-fbbb-45c8-9086-b5a5368c2429: 'Image Hero' # Image Hero
     e59a750b-bacf-4308-8042-1d484a6248ac: Blog # Blog
     e96d7c98-3659-4dac-834a-9b3875e19d3b: Simple # Simple
     eda1d68b-3d84-43a4-8e0b-88fccb194079: 'Image Content Optimized' # Image Content Optimized
+    f53223cc-170a-472c-9561-2f22df16bc96: 'Longform Content' # Longform Content
+    fab38811-fef1-4fc7-a7d4-7aeb3437eb35: 'CTA Url' # CTA Url
     fc95636f-567a-49fe-a410-86de9a5ea3cc: Landingpage # Landingpage
     fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510: Blog-Overview # Blog-Overview
+    fff166a9-5cfa-4eb2-aa7c-52a2f34b8a47: 'CTA Text' # CTA Text
 plugins:
   ckeditor:
     edition: standard
@@ -112,6 +133,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: FHJ6FY1INK3EL2NEIXCOB9GK
+    schemaVersion: 2.1.0
+    settings:
+      bypassProjectConfig: false
+      pluginName: Navigation
   typogrify:
     edition: standard
     enabled: true

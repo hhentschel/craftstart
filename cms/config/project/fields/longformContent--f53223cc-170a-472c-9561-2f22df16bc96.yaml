@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: longformContent
+instructions: null
+name: 'Longform Content'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 5c8dd4ed-8488-4d87-b11b-af5c7d46da6e # Longform Content
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  entryTypes:
+    - ca82ce19-1d0f-494a-b0e9-79eab0ba3665 # CTA
+    - 9f8d5177-949f-420b-be9a-2f552d514a68 # Images
+    - 26db054c-db10-4316-b753-0544f54f6710 # Related Entries
+    - 7601d3fa-9b2e-43fb-9b7a-d31bdc9d1e90 # Tabelle
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,6 +1,6 @@
-color: null
+color: pink
 fieldLayouts:
-  c7961e08-149b-4841-beef-9fc1548dfa18:
+  904d3684-d920-433b-a7b5-968fa4ccbd65:
     tabs:
       -
         elementCondition: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 086d31f3-ce4c-4b47-8222-4da023307f44
+            uid: 1115b891-3a7a-44e6-8fd0-6df6898aaa80
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: bdf32217-a781-41f4-8a9d-ba623b04e90a # Image Content
+            fieldUid: ce11b004-8f79-48e1-b31b-dbcea3a241bb # Icon
             handle: null
             includeInCards: false
             instructions: null
@@ -45,36 +45,36 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8ed2e243-40bd-4298-8705-46452e44dfd4
+            uid: 10fb8a52-26e0-462a-9414-3cb720d77fc2
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 6a8579a0-7f72-41c9-9a9b-4d6d4f5ad746 # Content Builder
-            handle: null
+            fieldUid: 72555363-9815-48cd-bcce-d855765e7d66 # Plain Text
+            handle: featureDescription
             includeInCards: false
             instructions: null
-            label: null
+            label: 'Feature Description'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ee707175-9958-4a1c-8b90-6576acee2e4b
+            uid: 952056cb-f2d1-4493-8fdd-517a41823f39
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 997efcbf-e489-4605-b17d-df922007f924
+        uid: fdb24d42-eb90-405d-959d-b64c116b4933
         userCondition: null
-handle: blogOverview
-hasTitleField: true
-icon: ''
-name: Blog-Overview
-showSlugField: true
-showStatusField: true
+handle: feature
+hasTitleField: false
+icon: tag
+name: Feature
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: '{FeatureDescription}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,6 +1,6 @@
-color: null
+color: emerald
 fieldLayouts:
-  c7961e08-149b-4841-beef-9fc1548dfa18:
+  85327d99-f063-42be-b71a-f7a40544274a:
     tabs:
       -
         elementCondition: null
@@ -30,7 +30,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 086d31f3-ce4c-4b47-8222-4da023307f44
+            uid: 890df5a4-a742-4c34-bdc5-739922a6297e
             userCondition: null
             warning: null
             width: 100
@@ -41,17 +41,17 @@ fieldLayouts:
             includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
+            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8ed2e243-40bd-4298-8705-46452e44dfd4
+            uid: 30ee2914-291d-4ce1-82c1-47fb14722261
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 6a8579a0-7f72-41c9-9a9b-4d6d4f5ad746 # Content Builder
+            fieldUid: 9dc35b77-87de-4411-91b1-05d093c994b9 # Caption
             handle: null
             includeInCards: false
             instructions: null
@@ -60,17 +60,32 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ee707175-9958-4a1c-8b90-6576acee2e4b
+            uid: bd7567e2-e9e7-475d-b0cc-4c0c8faafd3f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 287f6c8e-3c73-4ee3-9936-cbdaa3ba25fc # Position
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c7a6d79-1809-4394-b149-2deffeb7e823
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 997efcbf-e489-4605-b17d-df922007f924
+        uid: 8e2653fb-3d37-4e07-bef9-cc8e2217644a
         userCondition: null
-handle: blogOverview
+handle: images
 hasTitleField: true
-icon: ''
-name: Blog-Overview
+icon: images
+name: Images
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

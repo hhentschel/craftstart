@@ -1,6 +1,6 @@
-color: null
+color: lime
 fieldLayouts:
-  c7961e08-149b-4841-beef-9fc1548dfa18:
+  1cc7d9a4-4dbd-442f-a66c-861094d94fb4:
     tabs:
       -
         elementCondition: null
@@ -30,47 +30,47 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 086d31f3-ce4c-4b47-8222-4da023307f44
+            uid: 41b517ef-ebca-4758-8b23-b20424780dfe
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: bdf32217-a781-41f4-8a9d-ba623b04e90a # Image Content
+            fieldUid: fff166a9-5cfa-4eb2-aa7c-52a2f34b8a47 # CTA Text
             handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8ed2e243-40bd-4298-8705-46452e44dfd4
+            uid: 0a6fe6a4-e0b2-4f66-92f6-218130bcc919
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 6a8579a0-7f72-41c9-9a9b-4d6d4f5ad746 # Content Builder
+            fieldUid: fab38811-fef1-4fc7-a7d4-7aeb3437eb35 # CTA Url
             handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ee707175-9958-4a1c-8b90-6576acee2e4b
+            uid: 1bd794bb-0828-4e68-96f3-e56834c9d347
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 997efcbf-e489-4605-b17d-df922007f924
+        name: CTA
+        uid: 36a297b5-7921-4a69-bd07-80ddb6c4c660
         userCondition: null
-handle: blogOverview
+handle: cta
 hasTitleField: true
-icon: ''
-name: Blog-Overview
+icon: play
+name: CTA
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
