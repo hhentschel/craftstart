@@ -18,6 +18,37 @@
         - "/:/buddy/${PROJECT_SHORTNAME}"
       trigger_condition: "ALWAYS"
       shell: "SH"
+    - action: "Execute: composer install"
+      type: "BUILD"
+      working_directory: "/buddy/$PROJECT_SHORTNAME"
+      docker_image_name: "nystudio107/php-dev-base"
+      docker_image_tag: "latest"
+      execute_commands:
+        - "cd cms"
+        - "composer install --no-scripts --no-interaction --prefer-dist --optimize-autoloader --ignore-platform-reqs"
+      setup_commands:
+        - 'echo "memory_limit=-1" >> /usr/local/etc/php/conf.d/buddy.ini'
+        - "apk update && apk add git zip"
+        - "curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer"
+      volume_mappings:
+        - "/:/buddy/$PROJECT_SHORTNAME"
+      trigger_condition: "ALWAYS"
+      shell: "SH"
+    - action: "Craftdev: RSYNC"
+      type: "RSYNC"
+      local_path: "cms/"
+      remote_path: "$REMOTE_PROJECT_ROOT/deploy-cache"
+      login: "$REMOTE_SSH_USER"
+      host: "$REMOTE_SSH_WEB"
+      port: "22"
+      authentication_mode: "WORKSPACE_KEY"
+      archive: true
+      delete_extra_files: true
+      recursive: true
+      compress: true
+      deployment_excludes:
+        - "/.git/"
+      trigger_condition: "ALWAYS"
   variables:
     - key: "PROJECT_SHORTNAME"
       value: "craft"
