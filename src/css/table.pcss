@@ -1,0 +1,44 @@
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: unset;
+    text-align: left;
+  }
+
+
+.table {
+  overflow-x: auto;
+  max-width: 100%;
+
+  thead {
+
+    tr {
+      th {
+        min-width: 50px;
+        border-bottom: 2px solid black;
+
+        &:not(:last-child) {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid black;
+    }
+
+    td {
+      padding: 18px 0;
+
+
+
+      &:not(:last-child) {
+        padding-right: 24px;
+      }
+    }
+  }
+}
