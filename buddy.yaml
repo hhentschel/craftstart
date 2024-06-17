@@ -68,7 +68,8 @@
         - ' echo "Creating: releases/$BUDDY_EXECUTION_REVISION"'
         - " cp -dR deploy-cache releases/$BUDDY_EXECUTION_REVISION;"
         - "fi"
-        - 'echo "Creating: persistent directories"'
+        - 'echo "Creating: persistent directories and files"'
+        - "touch .env"
         - "mkdir -p storage"
         - 'echo "Symlinking: persistent files & directories"'
         - "ln -nfs $REMOTE_PROJECT_ROOT/.env $REMOTE_PROJECT_ROOT/releases/$BUDDY_EXECUTION_REVISION"
@@ -78,6 +79,29 @@
         - "ln -s releases/$BUDDY_EXECUTION_REVISION current"
         - 'echo "Removing old releases"'
         - "cd releases && ls -t | tail -n +11 | xargs rm -rf"
+      trigger_condition: "ALWAYS"
+      run_as_script: true
+      shell: "SH"
+    - action: "Prep Craft CMS"
+      type: "SSH_COMMAND"
+      working_directory: "$REMOTE_PROJECT_ROOT/current"
+      login: "$REMOTE_SSH_USER"
+      host: "$REMOTE_SSH_WEB"
+      port: "22"
+      authentication_mode: "WORKSPACE_KEY"
+      commands:
+        - "# Ensure the craft script is executable"
+        - "chmod a+x craft"
+        - "# Turn Craft off"
+        - "php craft off --retry=60"
+        - "# Restart our long running queue listener process"
+        - 'echo "" | sudo -S supervisorctl restart all'
+        - "# Backup the database just in case any migrations or Project Config changes have issues"
+        - "php craft db/backup"
+        - "# Run pending migrations, sync project config, and clear caches"
+        - "php craft up"
+        - "# Turn Craft on"
+        - "php craft on"
       trigger_condition: "ALWAYS"
       run_as_script: true
       shell: "SH"
