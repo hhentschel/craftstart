@@ -98,10 +98,25 @@
         - 'echo "" | sudo -S supervisorctl restart all'
         - "# Backup the database just in case any migrations or Project Config changes have issues"
         - "php craft db/backup"
-        - "# Run pending migrations, sync project config, and clear caches"
+        - "# Clear caches"
+        - "php craft clear-caches/all"
+        - "# Run pending migrations, sync project config"
         - "php craft up"
         - "# Turn Craft on"
         - "php craft on"
+      trigger_condition: "ALWAYS"
+      run_as_script: true
+      shell: "SH"
+    - action: "Reload PHP Web Server"
+      type: "SSH_COMMAND"
+      working_directory: "$REMOTE_PROJECT_ROOT/current"
+      login: "$REMOTE_SSH_USER"
+      host: "$REMOTE_SSH_WEB"
+      port: "22"
+      authentication_mode: "WORKSPACE_KEY"
+      commands:
+        - "# Reload our PHP process"
+        - 'echo "" | sudo -S service php8.2-fpm reload'
       trigger_condition: "ALWAYS"
       run_as_script: true
       shell: "SH"
@@ -109,10 +124,24 @@
     - key: "PROJECT_SHORTNAME"
       value: "craft"
     - key: "PROJECT_URL"
-      value: "https://craftdev.henrik.work"
+      value: "https://craftstart.henrik-hentschel.de"
     - key: "REMOTE_PROJECT_ROOT"
-      value: "/home/forge/craftdev.henrik.work"
+      value: "/home/ploi/craftstart.henrik-hentschel.de"
     - key: "REMOTE_SSH_WEB"
-      value: "142.93.230.122"
+      value: "116.202.14.186"
     - key: "REMOTE_SSH_USER"
-      value: "forge"
+      value: "ploi"
+
+
+
+    #   variables:
+    # - key: "PROJECT_SHORTNAME"
+    #   value: "craft"
+    # - key: "PROJECT_URL"
+    #   value: "https://craftdev.henrik.work"
+    # - key: "REMOTE_PROJECT_ROOT"
+    #   value: "/home/forge/craftdev.henrik.work"
+    # - key: "REMOTE_SSH_WEB"
+    #   value: "142.93.230.122"
+    # - key: "REMOTE_SSH_USER"
+    #   value: "forge"
