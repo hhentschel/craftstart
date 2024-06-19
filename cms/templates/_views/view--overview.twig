@@ -1,14 +1,18 @@
 
 {%- import '_macros/atomic' as atoms -%}
 
-
-{{ entry.title }}
-
+{# Is this the right place? #}
 {% block headLinks %}
     {% set image = entry.imageContent.collect.first %}
     {{ image.imageContentOptimized.linkPreloadTag().render() }}
 {% endblock headLinks %}
 
+
+{#  how to style headings? #}
+
+<div class="container flex flex-col items-center bg-cyan-100">
+
+<h1 class="h1-lg">{{ entry.title }}</h1>
 
 {% for block in entry.contentBuilder.all() %}
   {% switch block.type %}
@@ -34,7 +38,7 @@
   {% endswitch %}
 
 {% endfor %}
-
+</div>
 
   {# <div class="">
   {%- include '_organisms/grids/grid--blog' with {

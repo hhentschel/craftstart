@@ -38,14 +38,15 @@
         {%- include '_organisms/navigations/navigation--primary' ignore missing with {
             navigation: null
         } -%}
-        <main class="flex flex-col min-h-screen" id="page-content">
+
+        <main class="flex justify-between flex-col min-h-screen" id="page-content">
 
             {# -- Primary content block -- #}
-            <div id="page" w-ref="page">
+            <div id="page" class="w-full grow flex flex-col relative" w-ref="page">
                 {% block content %}
-                  <h1>Generic page</h1>
+
                 {% endblock %}
-            </div>
+                </div>
 
             {# -- Footer -- #}
             {%- include '_organisms/footers/footer--primary' ignore missing -%}

@@ -1,29 +1,22 @@
 {%- import '_macros/atomic' as atoms -%}
 
+<div class="container bg-cyan-100">
 
-<div class="mt-100">
-{{ entry.title }}
+    {{ entry.title }}
 
-{# <div class="max-w-full mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 bg-primary"> #}
-<div class="">
-        <div class="">
+    <div class="">
         {{ entry.HomeContent }}
 
-</div>
-
-<div class="flex flex-column flex-center">
- {{- atoms.atom('image', 'hero',  {
-    image: entry.imageHero.eagerly().collect.first,
-    sizes: '50vw',
-    placeholder: 'silhouette',
-    loadingStrategy: 'eager',
-    utilities: 'absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
-}) -}}
-
-
-
-</div>
-</div>
+        <div class="">
+            {{- atoms.atom('image', 'hero',  {
+                image: entry.imageHero.eagerly().collect.first,
+                sizes: '30vw',
+                placeholder: 'silhouette',
+                loadingStrategy: 'eager',
+                utilities: ''
+            }) -}}
+        </div>
+    </div>
 </div>
 
 

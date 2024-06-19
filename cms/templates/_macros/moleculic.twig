@@ -1,0 +1,19 @@
+{#
+    # Atomic
+    # @package   paudigital\craft
+    # @since     1.0.0
+    # @author    Pau.digtal
+    # @link      https://pau.be
+    # @copyright Copyright (c) 2022 Pau
+    # @license   MIT
+    # @license   https://opensource.org/licenses/MIT MIT Licensed
+    #}
+
+
+{% macro molecule(type, molecule, options, prefix = '') %}
+    {% apply spaceless %}
+        {% include '_molecules/' ~ type ~ 's/' ~ prefix ~ type ~ '--' ~ molecule with {
+            options: options,
+        } %}
+    {% endapply %}
+{% endmacro %}

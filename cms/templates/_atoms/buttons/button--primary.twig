@@ -4,8 +4,8 @@
 {%- block button -%}
 
     {%- set classes = collect({
-        default: 'inline-flex justify-center items-center rounded-full whitespace-nowrap no-underline gap-x-2',
-        padding: 'px-8 py-4',
+        default: 'inline-flex justify-center items-center rounded-lg whitespace-nowrap no-underline gap-x-2',
+        padding: 'px-4 py-2',
         position: props.get('iconPosition') == null ? 'flex-row-reverse' : (props.get('iconPosition') == 'after' ? 'flex-row' : 'flex-row-reverse'),
         animation: 'transition-colors duration-200 ease-in-out',
         color: 'bg-sky-700 text-white',

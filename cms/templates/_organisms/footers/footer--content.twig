@@ -1,9 +1,6 @@
 
-
-
 {%- extends '_organisms/footers/_footer--props' -%}
 {%- import '_macros/atomic' as atoms -%}
-
 
 {#
     ### PROPERTIES ###
@@ -12,17 +9,37 @@
     INHERITED FROM: `_organisms/footers/_footer--props.twig`
 #}
 
+{# text-h1-sm md:text-h1-md lg:text-h1-lg #}
+
 {%- block footer -%}
     {%- set classes = collect({
-        color: props.get('color') ??? 'text-white',
+        color: props.get('color') ??? 'text-green',
         font: 'font-primary',
-        size: 'text-h1-sm md:text-h1-md lg:text-h1-lg',
+        size: '',
         utilities: props.get('utilities'),
     }) -%}
 
     {%- minify -%}
-        <footer class="{{ classes.implode(' ') }}">
+        <footer class="footer {{ classes.implode(' ') }}" aria-labelledby="footer-headline">
+            <div class="footer__content container">
+            <h2 id="footer-headline" class="visually-hidden">Footer Hidden</h2>
+
+            {% set footer_columns = footer.footer.all() %}
+            {% if footer_columns %}
+                <div class="grid grid-cols-4 gap-8">
+                    {% for column in footer_columns %}
+                        <div class="py-8">
+                            <h3 class="footer__headline">
+                                {{ column.heading }}
+                            </h3>
+                                {{ column.text }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
             {{- props.get('content')|striptags('<strong>')|typogrify()|raw -}}
+            </div>
         </footer>
     {%- endminify -%}
 {%- endblock -%}

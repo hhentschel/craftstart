@@ -6,8 +6,10 @@
 {%- set id = "content-#{random()}-#{props.get('image').id}" -%}
 
 {%- set image = props.get('image') ??? null -%}
+{%- set caption = props.get('caption') ??? null -%}
 
 {% minify %}
+<figure>
 {{ image.imageTeaserOptimized.pictureTag()
   .imgAttrs
     ({
@@ -25,5 +27,9 @@
   .render()
 }}
 {% endminify %}
+  {% if caption %}
+    <figcaption>{{ caption }}</figcaption>
+  {% endif %}
+</figure>
 
 {%- endblock -%}

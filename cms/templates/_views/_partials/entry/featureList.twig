@@ -1,12 +1,15 @@
-{{ entry.title}}
 
-<h1>{{ loop.index0 }}</h1>
-<h1>{{ themeColor }}</h1>
+<div class="my-10 p-10 rounded-lg bg-teal-600 mb-24">
+<h2 class="h1-sm mb-5">{{ entry.title}}</h2>
 
-<div style="background-color: {{ themeColor }}">
+{# <h1>{{ loop.index0 }}</h1>
+<h1>{{ themeColor }}</h1> #}
+
+<div style="background-color: {{ themeColor }}" class="mb-10 p-5">
   {{ entry.featureListDescription}}
 </div>
 
 <div class="relative">
   {{ entry.feature.render() }}
+</div>
 </div>

@@ -1,8 +1,11 @@
 {%- import '_macros/atomic' as atoms -%}
 
+<div class="my-5 flex">
 {{- atoms.atom('image', 'content',  {
     image: entry.imageContent.one(),
     sizes: '50vw',
-    placeholder: 'silhouette',
+    placeholder: 'image',
     loadingStrategy: 'lazy'
 }) -}}
+
+</div>
