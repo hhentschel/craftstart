@@ -2,7 +2,9 @@
   "minimum-stability": "beta",
   "prefer-stable": true,
   "require": {
+    "craftcms/ckeditor": "^4.0.6",
     "craftcms/cms": "^5.0.0",
+    "mmikkel/cp-field-inspect": "^2.0.1",
     "nystudio107/craft-emptycoalesce": "^5.0.0",
     "nystudio107/craft-imageoptimize": "^5.0.1",
     "nystudio107/craft-minify": "^5.0.0",
