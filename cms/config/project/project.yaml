@@ -1,4 +1,4 @@
-dateModified: 1718617440
+dateModified: 1718789533
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
@@ -27,7 +27,6 @@ fs:
     url: '@web/dist/images'
 meta:
   __names__:
-    1a36346a-a82c-497b-acd5-df9e7b9d55b0: Menu # Menu
     1ecc4fa4-7e2d-4364-b61c-3a77a8f22390: 'Footer Content' # Footer Content
     2a3500d7-9902-4400-9a6d-7564e565cd9d: 'Feature List' # Feature List
     2b282624-7e65-477f-b41e-be03e7181f7f: Feature # Feature
@@ -142,14 +141,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  navigation:
-    edition: standard
-    enabled: true
-    licenseKey: FHJ6FY1INK3EL2NEIXCOB9GK
-    schemaVersion: 2.1.0
-    settings:
-      bypassProjectConfig: false
-      pluginName: Navigation
   typogrify:
     edition: standard
     enabled: true
