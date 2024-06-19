@@ -1,5 +1,5 @@
 columnSuffix: null
-handle: plainText
+handle: text
 instructions: null
 name: 'Plain Text'
 searchable: false

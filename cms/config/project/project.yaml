@@ -1,4 +1,4 @@
-dateModified: 1718205194
+dateModified: 1718617440
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
@@ -28,6 +28,7 @@ fs:
 meta:
   __names__:
     1a36346a-a82c-497b-acd5-df9e7b9d55b0: Menu # Menu
+    1ecc4fa4-7e2d-4364-b61c-3a77a8f22390: 'Footer Content' # Footer Content
     2a3500d7-9902-4400-9a6d-7564e565cd9d: 'Feature List' # Feature List
     2b282624-7e65-477f-b41e-be03e7181f7f: Feature # Feature
     3afe3600-f29a-4409-9b22-764f71a881c5: 'Rich Text' # Rich Text
@@ -45,6 +46,7 @@ meta:
     86f4b979-439d-4d67-8e6d-053a5ddf4c89: Pages # Pages
     99a58225-3f4f-4a3b-a338-35e1fda743ef: CraftDev # CraftDev
     287f6c8e-3c73-4ee3-9936-cbdaa3ba25fc: Position # Position
+    607df1b9-7f1f-461d-85ae-8ff854552412: Footer # Footer
     1230e3f3-1ac1-4b89-9150-35cbf1f39ff2: 'Image Hero Optimized' # Image Hero Optimized
     7601d3fa-9b2e-43fb-9b7a-d31bdc9d1e90: Tabelle # Tabelle
     9522a7a6-0ee3-42e2-a4b4-bd2f691c2c4d: Blog # Blog
@@ -53,12 +55,14 @@ meta:
     a2c173c5-4b31-4338-86ee-a0cb4aafc12b: Home # Home
     b3f3c321-3167-4f74-8f3e-a3a6a7b75f96: Description # Description
     b770f7e5-3411-4c52-91e3-c5929d334207: CraftDev # CraftDev
+    b64266e0-f780-4789-82af-577ebebb1372: Footer # Footer
     bdf32217-a781-41f4-8a9d-ba623b04e90a: 'Image Content' # Image Content
     c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f: Header # Header
     ca23ec94-c45c-4713-b3e5-5d8de0457e74: 'ImageOptimize - Hero' # ImageOptimize - Hero
     ca82ce19-1d0f-494a-b0e9-79eab0ba3665: CTA # CTA
     cbacf1e2-321f-4024-a6b0-5159a7fa227c: 'ImageOptimize - Content' # ImageOptimize - Content
     ce11b004-8f79-48e1-b31b-dbcea3a241bb: Icon # Icon
+    db52a890-e4be-4edb-b995-2b4d3aee70a4: Überschrift # Überschrift
     e2f3b30c-2b00-465f-b42b-5b8e8e0ab107: 'Rich Text' # Rich Text
     e3a20fd6-f305-4542-8ad7-f6ed6607137d: 'ImageOptimize - Teaser' # ImageOptimize - Teaser
     e57dd80e-fbbb-45c8-9086-b5a5368c2429: 'Image Hero' # Image Hero
@@ -66,6 +70,7 @@ meta:
     e96d7c98-3659-4dac-834a-9b3875e19d3b: Simple # Simple
     eda1d68b-3d84-43a4-8e0b-88fccb194079: 'Image Content Optimized' # Image Content Optimized
     f53223cc-170a-472c-9561-2f22df16bc96: 'Longform Content' # Longform Content
+    fa933347-d51c-4fd4-b944-cdc378d3dde8: Footer # Footer
     fab38811-fef1-4fc7-a7d4-7aeb3437eb35: 'CTA Url' # CTA Url
     fc95636f-567a-49fe-a410-86de9a5ea3cc: Landingpage # Landingpage
     fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510: Blog-Overview # Blog-Overview
@@ -75,6 +80,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   empty-coalesce:
     edition: standard
     enabled: true

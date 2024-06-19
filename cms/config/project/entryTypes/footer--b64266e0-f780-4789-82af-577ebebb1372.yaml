@@ -1,0 +1,65 @@
+color: rose
+fieldLayouts:
+  0f0b0691-5b2e-4734-b9e0-acbe2282f7da:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aa890e15-f9ee-4a3e-84f6-c92d58815215
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 607df1b9-7f1f-461d-85ae-8ff854552412 # Footer
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e076e5ba-0c72-40b1-bffe-58fcb0b7890c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 44b3b00f-6fbc-4b2d-ba57-412cb3441d47
+        userCondition: null
+handle: footer
+hasTitleField: true
+icon: boot
+name: Footer
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

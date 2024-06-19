@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  d0989eee-a746-468c-bc14-b57bbe2a3542:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d9f34cb0-256c-42f6-98a1-aeec86ab557b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: db52a890-e4be-4edb-b995-2b4d3aee70a4 # Überschrift
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a0e4bde3-76b7-452c-b34a-82098ca059a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 72555363-9815-48cd-bcce-d855765e7d66 # Plain Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed2f8d74-31c8-4490-bde1-7d3e49a20642
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f89480f7-6cdf-4f2d-b041-3c1ca2e1a09c
+        userCondition: null
+handle: footerContent
+hasTitleField: false
+icon: ''
+name: 'Footer Content'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

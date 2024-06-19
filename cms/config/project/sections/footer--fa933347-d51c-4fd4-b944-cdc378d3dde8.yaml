@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - b64266e0-f780-4789-82af-577ebebb1372 # Footer
+handle: footer
+maxAuthors: 1
+name: Footer
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  b770f7e5-3411-4c52-91e3-c5929d334207: # CraftDev
+    enabledByDefault: true
+    hasUrls: true
+    template: _routers/router--page.twig
+    uriFormat: footer
+type: single
