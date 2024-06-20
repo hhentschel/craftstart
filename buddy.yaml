@@ -95,7 +95,7 @@
         - "# Turn Craft off"
         - "php craft off --retry=60"
         - "# Restart our long running queue listener process"
-        - "php {RESTART_DAEMON {48596}}"
+        - "php RESTART_DAEMON {48596}"
         - "# Backup the database just in case any migrations or Project Config changes have issues"
         - "php craft db/backup"
         - "# Clear caches"
