@@ -13,7 +13,7 @@
 
 {%- block footer -%}
     {%- set classes = collect({
-        color: props.get('color') ??? 'text-green',
+        color: props.get('color') ??? 'text-green-500',
         font: 'font-primary',
         size: '',
         utilities: props.get('utilities'),
@@ -23,6 +23,8 @@
         <footer class="footer {{ classes.implode(' ') }}" aria-labelledby="footer-headline">
             <div class="footer__content container">
             <h2 id="footer-headline" class="visually-hidden">Footer Hidden</h2>
+
+            {{- props.get('content')|striptags('<strong>')|typogrify()|raw -}}
 
             {% set footer_columns = footer.footer.all() %}
             {% if footer_columns %}
@@ -38,7 +40,6 @@
                 </div>
             {% endif %}
 
-            {{- props.get('content')|striptags('<strong>')|typogrify()|raw -}}
             </div>
         </footer>
     {%- endminify -%}

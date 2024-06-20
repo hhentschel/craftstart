@@ -12,9 +12,19 @@
 
     {%- minify -%}
         <header class="{{ classes.implode(' ') }}">
-                {{- props.get('content')|striptags('<strong>')|typogrify()|raw -}}
-
-
+                <div class="header__content relative z-10">
+                    {{- props.get('content')|striptags('<strong>')|typogrify()|raw -}}
+                </div>
+                <div class="header__bg">
+                 {{- atoms.atom('image', 'hero',  {
+                    image: header.imageHero.eagerly().collect.first,
+                    sizes: '100vw',
+                    placeholder: 'image',
+                    loadingStrategy: 'eager',
+                    utilitiesImage: 'w-full h-full',
+                    utilitiesPicture: 'header__bg-image'
+                }) -}}
+                </div>
         </header>
     {%- endminify -%}
 {%- endblock -%}
