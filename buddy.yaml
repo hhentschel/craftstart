@@ -1,6 +1,6 @@
 - pipeline: "Craftdev: Build & Deploy to Staging"
   trigger_mode: "ON_EVERY_PUSH"
-  ref_name: "main"
+  ref_name: "develop"
   ref_type: "BRANCH"
   target_site_url: "$PROJECT_URL"
   trigger_condition: "ALWAYS"
