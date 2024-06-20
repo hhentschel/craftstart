@@ -115,7 +115,7 @@
       authentication_mode: "WORKSPACE_KEY"
       commands:
         - "# Reload our PHP process"
-        - 'echo "" | sudo -S service php8.2-fpm reload'
+        - 'echo "" | sudo -S service php8.3-fpm reload'
       trigger_condition: "ALWAYS"
       run_as_script: true
       shell: "SH"
