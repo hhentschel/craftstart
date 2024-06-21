@@ -94,7 +94,7 @@
         - "chmod a+x craft"
         - "# Turn Craft off"
         - "php craft off --retry=60"
-        - "# Restart our long running queue listener process"
+        - "# Restart our long running queue listener process, cannot be done here, with curl restart the daemon via ploi script"
         - "curl -X POST https://ploi.io/webhooks/servers/74284/sites/227068/deploy?token=yEThroTfkp4if0ccWcDg5Uf61lgbenY5M6oc3xFdsIziu2RyYi&direct=true"
         - "# Backup the database just in case any migrations or Project Config changes have issues"
         - "php craft db/backup"
