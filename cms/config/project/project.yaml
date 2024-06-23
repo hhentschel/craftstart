@@ -1,4 +1,4 @@
-dateModified: 1718789533
+dateModified: 1719143427
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
@@ -8,23 +8,59 @@ fs:
     hasUrls: true
     name: 'Content Images'
     settings:
-      path: '@webroot/dist/images'
-    type: craft\fs\Local
-    url: '@web/dist/images'
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: ''
+      expires: '1 years'
+      keyId: $S3_ACCESS_KEY
+      makeUploadsPublic: false
+      region: $S3_REGION
+      secret: $S3_SECRET_KEY
+      storageClass: ''
+      subfolder: content-images/
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
   heroImages:
     hasUrls: true
     name: 'Hero Images'
     settings:
-      path: '@webroot/dist/images'
-    type: craft\fs\Local
-    url: '@web/dist/images'
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: ''
+      expires: '1 years'
+      keyId: $S3_ACCESS_KEY
+      makeUploadsPublic: false
+      region: $S3_REGION
+      secret: $S3_SECRET_KEY
+      storageClass: ''
+      subfolder: ''
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
   teaserImages:
     hasUrls: true
     name: 'Teaser Images'
     settings:
-      path: '@webroot/dist/images'
-    type: craft\fs\Local
-    url: '@web/dist/images'
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: ''
+      expires: '1 years'
+      keyId: $S3_ACCESS_KEY
+      makeUploadsPublic: false
+      region: $S3_REGION
+      secret: $S3_SECRET_KEY
+      storageClass: ''
+      subfolder: teaser-images
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
 meta:
   __names__:
     1ecc4fa4-7e2d-4364-b61c-3a77a8f22390: 'Footer Content' # Footer Content
@@ -75,6 +111,10 @@ meta:
     fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510: Blog-Overview # Blog-Overview
     fff166a9-5cfa-4eb2-aa7c-52a2f34b8a47: 'CTA Text' # CTA Text
 plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
   ckeditor:
     edition: standard
     enabled: true
