@@ -22,6 +22,9 @@ web_environment:
     - PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
     - CRAFT_CMD_ROOT=./cms
 nodejs_version: "20"
+hooks:
+  post-start:
+    - exec: "php craft queue/listen"
 
 # Key features of DDEV's config.yaml:
 
