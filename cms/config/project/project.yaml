@@ -1,4 +1,4 @@
-dateModified: 1719143427
+dateModified: 1719317894
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
@@ -12,7 +12,7 @@ fs:
       autoFocalPoint: false
       bucket: $S3_BUCKET
       bucketSelectionMode: manual
-      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfDistributionId: $CLOUDFRONT_IO_DISTRIBUTION_ID
       cfPrefix: ''
       expires: '1 years'
       keyId: $S3_ACCESS_KEY
@@ -22,7 +22,7 @@ fs:
       storageClass: ''
       subfolder: content-images/
     type: craft\awss3\Fs
-    url: $CLOUDFRONT_URL
+    url: $CLOUDFRONT_IO_URL
   heroImages:
     hasUrls: true
     name: 'Hero Images'
@@ -31,7 +31,7 @@ fs:
       autoFocalPoint: false
       bucket: $S3_BUCKET
       bucketSelectionMode: manual
-      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfDistributionId: $CLOUDFRONT_IO_DISTRIBUTION_ID
       cfPrefix: ''
       expires: '1 years'
       keyId: $S3_ACCESS_KEY
@@ -41,7 +41,7 @@ fs:
       storageClass: ''
       subfolder: ''
     type: craft\awss3\Fs
-    url: $CLOUDFRONT_URL
+    url: $CLOUDFRONT_IO_URL
   teaserImages:
     hasUrls: true
     name: 'Teaser Images'
@@ -50,7 +50,7 @@ fs:
       autoFocalPoint: false
       bucket: $S3_BUCKET
       bucketSelectionMode: manual
-      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfDistributionId: $CLOUDFRONT_IO_DISTRIBUTION_ID
       cfPrefix: ''
       expires: '1 years'
       keyId: $S3_ACCESS_KEY
@@ -60,7 +60,7 @@ fs:
       storageClass: ''
       subfolder: teaser-images
     type: craft\awss3\Fs
-    url: $CLOUDFRONT_URL
+    url: $CLOUDFRONT_IO_URL
 meta:
   __names__:
     1ecc4fa4-7e2d-4364-b61c-3a77a8f22390: 'Footer Content' # Footer Content
@@ -163,7 +163,7 @@ plugins:
               __assoc__:
                 -
                   - baseUrl
-                  - ''
+                  - $CLOUDFRONT_IO_URL
           -
             - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
             -
@@ -174,9 +174,12 @@ plugins:
                 -
                   - securityKey
                   - ''
+                -
+                  - includeBucketPrefix
+                  - ''
       lowerQualityRetinaImageVariants: true
       sharpenScaledImagePercentage: 50
-      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
+      transformClass: nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
   minify:
     edition: standard
     enabled: true
