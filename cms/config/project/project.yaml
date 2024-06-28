@@ -1,4 +1,4 @@
-dateModified: 1719317894
+dateModified: 1719499904
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
@@ -196,7 +196,7 @@ system:
   edition: solo
   live: true
   name: CraftDev
-  schemaVersion: 5.0.0.20
+  schemaVersion: 5.0.0.21
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
