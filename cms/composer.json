@@ -3,13 +3,13 @@
   "prefer-stable": true,
   "require": {
     "craftcms/aws-s3": "^2.2.1",
-    "craftcms/ckeditor": "^4.0.6",
-    "craftcms/cms": "^5.0.0",
+    "craftcms/ckeditor": "4.1.0",
+    "craftcms/cms": "5.2.3",
     "mmikkel/cp-field-inspect": "^2.0.1",
     "nystudio107/craft-emptycoalesce": "^5.0.0",
-    "nystudio107/craft-imageoptimize": "^5.0.1",
+    "nystudio107/craft-imageoptimize": "5.0.2",
     "nystudio107/craft-minify": "^5.0.0",
-    "nystudio107/craft-typogrify": "^5.0.0",
+    "nystudio107/craft-typogrify": "5.0.1",
     "nystudio107/craft-vite": "^5.0.0",
     "twig/intl-extra": "^3.9",
     "vlucas/phpdotenv": "^5.4.0",
@@ -56,5 +56,12 @@
     "pre-install-cmd": "@pre-craft-update",
     "post-update-cmd": "@post-craft-update",
     "post-install-cmd": "@post-craft-update"
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ]
 }
