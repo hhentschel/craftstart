@@ -11,16 +11,20 @@
 use craft\config\GeneralConfig;
 use craft\helpers\App;
 
-// CRAFT_WEB_URL="https://craftstart.ddev.site"
-// PRIMARY_SITE_URL="https://craftstart.ddev.site"
-
 return GeneralConfig::create()
     ->aliases([
-        '@assetsUrl' => App::env('ASSETS_URL'),
+        '@assetsUrl' => App::env('CRAFT_ASSETS_URL'),
         '@cloudfrontUrl' => App::env('CLOUDFRONT_URL'),
         '@web' => App::env('PRIMARY_SITE_URL'),
-        '@webroot' => App::env('CRAFT_WEB_ROOT_PATH'),
+        //
+        '@webrootpath' => App::env('CRAFT_WEB_ROOT_PATH'),
+        '@webroot' => App::env('CRAFT_WEB_ROOT'),
     ])
+    // ->aliases([
+    //     '@webroot' => dirname(__DIR__) . '/web',
+    //     '@assetsUrl' => dirname(__DIR__) . '/web/dist',
+    // ])
+
     ->allowUpdates(App::env('CRAFT_ALLOW_UPDATES'))
     ->allowAdminChanges(App::env('CRAFT_ALLOW_ADMIN_CHANGES'))
     ->backupOnUpdate(App::env('CRAFT_BACKUP_ON_UPDATE'))
@@ -46,13 +50,11 @@ return GeneralConfig::create()
     ->omitScriptNameInUrls(true)
     ->preventUserEnumeration(true)
     ->sendPoweredByHeader(false)
-    ->useEmailAsUsername(true)
+    ->preloadSingles(true)
+    ->useEmailAsUsername(false)
+
     ->usePathInfo(true)
     ->limitAutoSlugsToAscii(true)
     ->convertFilenamesToAscii(true);
 
-    // ->aliases([
-    //     '@webroot' => dirname(__DIR__) . '/web',
-    //     '@assetsUrl' => dirname(__DIR__) . '/web/dist',
-    // ])
 ;
