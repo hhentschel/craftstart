@@ -131,17 +131,3 @@
       value: "116.202.14.186"
     - key: "REMOTE_SSH_USER"
       value: "ploi"
-
-
-
-    #   variables:
-    # - key: "PROJECT_SHORTNAME"
-    #   value: "craft"
-    # - key: "PROJECT_URL"
-    #   value: "https://craftdev.henrik.work"
-    # - key: "REMOTE_PROJECT_ROOT"
-    #   value: "/home/forge/craftdev.henrik.work"
-    # - key: "REMOTE_SSH_WEB"
-    #   value: "142.93.230.122"
-    # - key: "REMOTE_SSH_USER"
-    #   value: "forge"
