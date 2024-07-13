@@ -13,12 +13,15 @@ use craft\helpers\App;
 
 return GeneralConfig::create()
     ->aliases([
-        '@assetsUrl' => App::env('CRAFT_ASSETS_URL'),
         '@cloudfrontUrl' => App::env('CLOUDFRONT_URL'),
         '@web' => App::env('PRIMARY_SITE_URL'),
         //
         '@webrootpath' => App::env('CRAFT_WEB_ROOT_PATH'),
-        '@webroot' => App::env('CRAFT_WEB_ROOT'),
+        # '@webroot' => App::env('CRAFT_WEB_ROOT'),
+        # '@assetsUrl' => App::env('CRAFT_ASSETS_URL'),
+
+        '@webroot' => dirname(__DIR__) . '/web',
+        '@assetsUrl' => dirname(__DIR__) . '/web/dist',
     ])
     // ->aliases([
     //     '@webroot' => dirname(__DIR__) . '/web',
