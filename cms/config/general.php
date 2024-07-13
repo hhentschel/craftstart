@@ -17,8 +17,8 @@ return GeneralConfig::create()
         '@web' => App::env('PRIMARY_SITE_URL'),
         //
         '@webrootpath' => App::env('CRAFT_WEB_ROOT_PATH'),
-        # '@webroot' => App::env('CRAFT_WEB_ROOT'),
-        # '@assetsUrl' => App::env('CRAFT_ASSETS_URL'),
+        // '@webroot' => App::env('CRAFT_WEB_ROOT'),
+        // '@assetsUrl' => App::env('CRAFT_ASSETS_URL'),
 
         '@webroot' => dirname(__DIR__) . '/web',
         '@assetsUrl' => dirname(__DIR__) . '/web/dist',
