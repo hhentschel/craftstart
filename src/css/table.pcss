@@ -14,8 +14,8 @@
 
   :is(thead) {
 
-    tr {
-      th {
+    :is(tr) {
+      :is(th) {
         min-width: 50px;
         border-bottom: 2px solid black;
 
@@ -27,11 +27,11 @@
   }
 
   :is(tbody) {
-    tr {
+    :is(tr) {
       border-bottom: 1px solid black;
     }
 
-    td {
+    :is(td) {
       padding: 18px 0;
 
 
