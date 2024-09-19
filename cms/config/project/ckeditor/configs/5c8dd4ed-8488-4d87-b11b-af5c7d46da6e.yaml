@@ -4,6 +4,23 @@ headingLevels:
   - 3
   - 4
 name: 'Longform Content'
+options:
+  typing:
+    transformations:
+      extra:
+        -
+          from: ':)'
+          to: 🙂
+        -
+          from: '"([^"]*)"'
+          to: «$1»
+        -
+          from: '(^|\s)"([^"]*)"(\s|$)'
+          to: $1«$2»$3
+      remove:
+        - quotes
+        - arrowLeft
+        - arrowRight
 toolbar:
   - createEntry
   - heading
@@ -14,3 +31,4 @@ toolbar:
   - italic
   - link
   - insertImage
+  - highlight

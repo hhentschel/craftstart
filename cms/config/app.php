@@ -21,7 +21,8 @@
  */
 
 use craft\helpers\App;
+use modules\ckeditorcustomizations\src\CkeditorCustomizations;
 
 return [
-    'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
+    'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS', 'modules' => ['ckeditor-customizations' => CkeditorCustomizations::class], 'bootstrap' => ['ckeditor-customizations'],
 ];
