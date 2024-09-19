@@ -3,24 +3,8 @@ headingLevels:
   - 2
   - 3
   - 4
+js: "return {\r\n  typing: {\r\n            transformations: {\r\n                remove: [\r\n                    // Do not use the transformations from the\r\n                    // 'symbols' and 'quotes' groups.\r\n                    'symbols',\r\n                    'quotes',\r\n\r\n                    // As well as the following transformations.\r\n                    'arrowLeft',\r\n                    'arrowRight'\r\n                ],\r\n\r\n                extra: [\r\n                    // Add some custom transformations, for example, for emojis.\r\n                    { from: ':)', to: '🙂' },\r\n                    { from: ':+1:', to: '👍' },\r\n                    { from: ':tada:', to: '🎉' },\r\n\r\n                    // You can also define patterns using regular expressions.\r\n                    // Note: The pattern must end with `$` and all its fragments must be wrapped\r\n                    // with capturing groups.\r\n                    // The following rule replaces ` \"foo\"` with ` «foo»`.\r\n                    {\r\n                        from: /(^|\\s)(\")([^\"]*)(\")$/,\r\n                        to: [ null, '«', null, '»' ]\r\n                    },\r\n\r\n                    // Finally, you can define `to` as a callback.\r\n                    // This (naive) rule will auto-capitalize the first word after a period, question mark, or an exclamation mark.\r\n                    {\r\n                        from: /([.?!] )([a-z])$/,\r\n                        to: matches => [ null, matches[ 1 ].toUpperCase() ]\r\n                    }\r\n                ],\r\n            }\r\n        }\r\n}"
 name: 'Longform Content'
-options:
-  typing:
-    transformations:
-      extra:
-        -
-          from: ':)'
-          to: 🙂
-        -
-          from: '"([^"]*)"'
-          to: «$1»
-        -
-          from: '(^|\s)"([^"]*)"(\s|$)'
-          to: $1«$2»$3
-      remove:
-        - quotes
-        - arrowLeft
-        - arrowRight
 toolbar:
   - createEntry
   - heading
