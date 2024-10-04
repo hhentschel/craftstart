@@ -10,7 +10,6 @@ toolbar:
   - heading
   - '|'
   - anchor
-  - textPartLanguage
   - bold
   - italic
   - link
