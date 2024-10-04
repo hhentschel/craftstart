@@ -41,7 +41,7 @@ return GeneralConfig::create()
     // ->defaultTokenDuration('P1D')
     // ->enableCsrfProtection(true)
     // ->errorTemplatePrefix('errors/')
-    // ->partialTemplatesPath('/_views/_partials')
+     ->partialTemplatesPath('/_views/_partials')
     // ->extraFileKinds([
     //     'text' => [
     //         'extensions' => ['csv'],
