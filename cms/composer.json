@@ -4,13 +4,13 @@
   "require": {
     "craftcms/aws-s3": "^2.2.1",
     "craftcms/ckeditor": "4.1.0",
-    "craftcms/cms": "5.2.3",
-    "mmikkel/cp-field-inspect": "^2.0.1",
+    "craftcms/cms": "5.4.9",
+    "mmikkel/cp-field-inspect": "2.0.2",
     "nystudio107/craft-emptycoalesce": "^5.0.0",
-    "nystudio107/craft-imageoptimize": "5.0.2",
+    "nystudio107/craft-imageoptimize": "5.0.3",
     "nystudio107/craft-minify": "^5.0.0",
     "nystudio107/craft-typogrify": "5.0.1",
-    "nystudio107/craft-vite": "^5.0.0",
+    "nystudio107/craft-vite": "5.0.1",
     "twig/intl-extra": "^3.9",
     "vlucas/phpdotenv": "^5.4.0",
     "yiisoft/yii2-redis": "^2.0.6"
