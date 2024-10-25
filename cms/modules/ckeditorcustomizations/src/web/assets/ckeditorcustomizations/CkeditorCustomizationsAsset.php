@@ -16,14 +16,17 @@ class CkeditorCustomizationsAsset extends BaseCkeditorPackageAsset
         'typing.js',
         'text-transformation.js',
         'highlight.js',
+        'style.js',
     ];
     public $css = [];
     public array $pluginNames = [
         'Typing',
         'TextTransformation',
         'Highlight',
+        'Styles',
     ];
     public array $toolbarItems = [
         'highlight',
+        'style',
     ];
 }

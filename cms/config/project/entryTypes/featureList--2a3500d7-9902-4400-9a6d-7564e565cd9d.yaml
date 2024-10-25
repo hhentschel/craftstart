@@ -72,7 +72,7 @@ hasTitleField: true
 icon: list-tree
 name: 'Feature List'
 showSlugField: false
-showStatusField: false
+showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: ''

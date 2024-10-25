@@ -4,7 +4,7 @@ instructions: null
 name: 'Content Builder'
 searchable: false
 settings:
-  createButtonLabel: null
+  createButtonLabel: 'neues Element'
   entryTypes:
     - 3afe3600-f29a-4409-9b22-764f71a881c5 # Rich Text
     - ca82ce19-1d0f-494a-b0e9-79eab0ba3665 # CTA
