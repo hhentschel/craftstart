@@ -1,0 +1,19 @@
+columnSuffix: null
+handle: nummernfeld
+instructions: null
+name: Nummernfeld
+searchable: false
+settings:
+  decimals: 1
+  defaultValue: null
+  max: 100
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  step: 0
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

@@ -15,7 +15,7 @@ settings:
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: true
-  wordLimit: 50
+  wordLimit: 1000
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

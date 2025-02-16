@@ -1,4 +1,63 @@
-dateModified: 1729851289
+dateModified: 1739718756
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Kanäle
+      type: heading
+    -
+      key: 'section:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+      type: native
+    -
+      heading: Strukturen
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - authors
+        - link
+        - 'field:bdf32217-a781-41f4-8a9d-ba623b04e90a' # Image Content
+        - revisionCreator
+        - dateUpdated
+        - dateCreated
+        - revisionNotes
+      type: native
+    -
+      key: 'section:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+      type: native
+    -
+      key: 'section:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+      type: native
+    -
+      heading: ''
+      type: heading
+  craft\elements\User:
+    -
+      defaultSort:
+        - username
+        - asc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - fullName
+        - email
+        - dateCreated
+        - lastLoginDate
+        - preferredLocale
+      type: native
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: CraftDev
@@ -63,6 +122,7 @@ fs:
     url: $CLOUDFRONT_IO_URL
 meta:
   __names__:
+    0e3ab7e8-caf3-452c-8e42-b55d64f24026: 'Artikel Tech' # Artikel Tech
     1ecc4fa4-7e2d-4364-b61c-3a77a8f22390: 'Footer Content' # Footer Content
     2a3500d7-9902-4400-9a6d-7564e565cd9d: 'Feature List' # Feature List
     2b282624-7e65-477f-b41e-be03e7181f7f: Feature # Feature
@@ -87,12 +147,14 @@ meta:
     9522a7a6-0ee3-42e2-a4b4-bd2f691c2c4d: Blog # Blog
     867399f9-5cee-4f95-836b-a04cc7bc2639: Header # Header
     72555363-9815-48cd-bcce-d855765e7d66: 'Plain Text' # Plain Text
+    73392818-36d0-419a-a731-d65ac4927ebc: 'Public Schema' # Public Schema
     a2c173c5-4b31-4338-86ee-a0cb4aafc12b: Home # Home
     b3f3c321-3167-4f74-8f3e-a3a6a7b75f96: Description # Description
     b770f7e5-3411-4c52-91e3-c5929d334207: CraftDev # CraftDev
     b64266e0-f780-4789-82af-577ebebb1372: Footer # Footer
     bdf32217-a781-41f4-8a9d-ba623b04e90a: 'Image Content' # Image Content
     c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f: Header # Header
+    c21ecef0-860f-40a8-be9f-b182cc90ff2c: Nummernfeld # Nummernfeld
     c55ca0a9-4bd6-409b-afd8-c1884dafecd0: Team # Team
     ca23ec94-c45c-4713-b3e5-5d8de0457e74: 'ImageOptimize - Hero' # ImageOptimize - Hero
     ca82ce19-1d0f-494a-b0e9-79eab0ba3665: CTA # CTA
@@ -104,6 +166,7 @@ meta:
     e57dd80e-fbbb-45c8-9086-b5a5368c2429: 'Image Hero' # Image Hero
     e59a750b-bacf-4308-8042-1d484a6248ac: Blog # Blog
     e96d7c98-3659-4dac-834a-9b3875e19d3b: Simple # Simple
+    e68167e4-15ab-4aee-93ff-881ea72b1cad: 'Artikel Konzept' # Artikel Konzept
     eda1d68b-3d84-43a4-8e0b-88fccb194079: 'Image Content Optimized' # Image Content Optimized
     f53223cc-170a-472c-9561-2f22df16bc96: 'Longform Content' # Longform Content
     fa933347-d51c-4fd4-b944-cdc378d3dde8: Footer # Footer
@@ -197,5 +260,5 @@ system:
   edition: team
   live: true
   name: CraftDev
-  schemaVersion: 5.3.0.2
+  schemaVersion: 5.6.0.2
   timeZone: America/Los_Angeles

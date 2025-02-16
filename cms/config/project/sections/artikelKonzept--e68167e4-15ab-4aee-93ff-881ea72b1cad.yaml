@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510 # Blog-Overview
+  - fc95636f-567a-49fe-a410-86de9a5ea3cc # Landingpage
+handle: artikelKonzept
+maxAuthors: 10
+name: 'Artikel Konzept'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre Eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  b770f7e5-3411-4c52-91e3-c5929d334207: # CraftDev
+    enabledByDefault: true
+    hasUrls: true
+    template: artikel-konzept/_entry.twig
+    uriFormat: 'artikel-konzept/{slug}'
+structure:
+  maxLevels: null
+  uid: ea3ef861-3bb2-4994-b016-95b1f550d604
+type: structure
