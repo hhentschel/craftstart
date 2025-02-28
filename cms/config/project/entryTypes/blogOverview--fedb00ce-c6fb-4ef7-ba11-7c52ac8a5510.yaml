@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-10-25T12:46:23+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -35,6 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-10-25T12:46:23+00:00'
             elementCondition: null
             fieldUid: bdf32217-a781-41f4-8a9d-ba623b04e90a # Image Content
             handle: null
@@ -50,6 +52,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-10-25T12:46:23+00:00'
             elementCondition: null
             fieldUid: 6a8579a0-7f72-41c9-9a9b-4d6d4f5ad746 # Content Builder
             handle: null
@@ -69,7 +72,7 @@ fieldLayouts:
         userCondition: null
 handle: blogOverview
 hasTitleField: true
-icon: ''
+icon: ballot-check
 name: Blog-Overview
 showSlugField: true
 showStatusField: true

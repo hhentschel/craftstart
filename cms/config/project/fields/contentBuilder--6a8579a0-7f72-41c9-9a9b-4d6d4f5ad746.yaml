@@ -4,7 +4,8 @@ instructions: null
 name: 'Content Builder'
 searchable: false
 settings:
-  createButtonLabel: null
+  createButtonLabel: 'neues Element'
+  defaultIndexViewMode: cards
   entryTypes:
     - 3afe3600-f29a-4409-9b22-764f71a881c5 # Rich Text
     - ca82ce19-1d0f-494a-b0e9-79eab0ba3665 # CTA
@@ -15,11 +16,11 @@ settings:
   includeTableView: false
   maxEntries: null
   minEntries: null
-  pageSize: 50
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
-  showCardsInGrid: true
-  viewMode: cards
+  showCardsInGrid: false
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

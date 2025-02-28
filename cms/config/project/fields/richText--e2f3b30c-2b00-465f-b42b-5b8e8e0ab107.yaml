@@ -14,8 +14,8 @@ settings:
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  showWordCount: false
-  wordLimit: null
+  showWordCount: true
+  wordLimit: 1000
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

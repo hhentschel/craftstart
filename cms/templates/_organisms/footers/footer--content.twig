@@ -26,7 +26,7 @@
 
             {{- props.get('content')|striptags('<strong>')|typogrify()|raw -}}
 
-            {% set footer_columns = footer.footer.all() %}
+            {# {% set footer_columns = footer.footer.all() %}
             {% if footer_columns %}
                 <div class="grid grid-cols-4 gap-8">
                     {% for column in footer_columns %}
@@ -38,7 +38,7 @@
                         </div>
                     {% endfor %}
                 </div>
-            {% endif %}
+            {% endif %} #}
 
             </div>
         </footer>

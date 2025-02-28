@@ -4,6 +4,7 @@ instructions: null
 name: Position
 searchable: false
 settings:
+  customOptions: true
   options:
     -
       __assoc__:

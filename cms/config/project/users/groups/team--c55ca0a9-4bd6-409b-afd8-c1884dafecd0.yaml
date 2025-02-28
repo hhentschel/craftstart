@@ -1,0 +1,92 @@
+description: null
+handle: team
+name: Team
+permissions:
+  - 'createentries:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'createentries:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'createentries:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'createentries:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'createfolders:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'createfolders:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'createfolders:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'deleteassets:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'deleteassets:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'deleteassets:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'deleteentries:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'deleteentries:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'deleteentries:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'deleteentries:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'deletepeerassets:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'deletepeerassets:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'deletepeerassets:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'deletepeerentries:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'deletepeerentries:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'deletepeerentries:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'deletepeerentries:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'deletepeerentrydrafts:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'deletepeerentrydrafts:4a627350-c333-49de-978e-b756cd988db7' # Home
+  - 'deletepeerentrydrafts:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'deletepeerentrydrafts:c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f' # Header
+  - 'deletepeerentrydrafts:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'deletepeerentrydrafts:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'deletepeerentrydrafts:fa933347-d51c-4fd4-b944-cdc378d3dde8' # Footer
+  - 'editimages:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'editimages:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'editimages:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'editpeerimages:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'editpeerimages:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'editpeerimages:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'replacefiles:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'replacefiles:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'replacefiles:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'replacepeerfiles:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'replacepeerfiles:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'replacepeerfiles:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'saveassets:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'saveassets:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'saveassets:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'saveentries:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'saveentries:4a627350-c333-49de-978e-b756cd988db7' # Home
+  - 'saveentries:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'saveentries:c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f' # Header
+  - 'saveentries:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'saveentries:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'saveentries:fa933347-d51c-4fd4-b944-cdc378d3dde8' # Footer
+  - 'savepeerassets:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'savepeerassets:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'savepeerassets:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'savepeerentries:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'savepeerentries:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'savepeerentries:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'savepeerentries:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'savepeerentrydrafts:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'savepeerentrydrafts:4a627350-c333-49de-978e-b756cd988db7' # Home
+  - 'savepeerentrydrafts:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'savepeerentrydrafts:c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f' # Header
+  - 'savepeerentrydrafts:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'savepeerentrydrafts:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'savepeerentrydrafts:fa933347-d51c-4fd4-b944-cdc378d3dde8' # Footer
+  - 'viewassets:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'viewassets:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'viewassets:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'viewentries:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'viewentries:4a627350-c333-49de-978e-b756cd988db7' # Home
+  - 'viewentries:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'viewentries:c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f' # Header
+  - 'viewentries:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'viewentries:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'viewentries:fa933347-d51c-4fd4-b944-cdc378d3dde8' # Footer
+  - 'viewpeerassets:ca23ec94-c45c-4713-b3e5-5d8de0457e74' # ImageOptimize - Hero
+  - 'viewpeerassets:cbacf1e2-321f-4024-a6b0-5159a7fa227c' # ImageOptimize - Content
+  - 'viewpeerassets:e3a20fd6-f305-4542-8ad7-f6ed6607137d' # ImageOptimize - Teaser
+  - 'viewpeerentries:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'viewpeerentries:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'viewpeerentries:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'viewpeerentries:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'viewpeerentrydrafts:0e3ab7e8-caf3-452c-8e42-b55d64f24026' # Artikel Tech
+  - 'viewpeerentrydrafts:4a627350-c333-49de-978e-b756cd988db7' # Home
+  - 'viewpeerentrydrafts:86f4b979-439d-4d67-8e6d-053a5ddf4c89' # Pages
+  - 'viewpeerentrydrafts:c3a6b49e-2ca2-47c0-b154-7eb46f85bd2f' # Header
+  - 'viewpeerentrydrafts:e59a750b-bacf-4308-8042-1d484a6248ac' # Blog
+  - 'viewpeerentrydrafts:e68167e4-15ab-4aee-93ff-881ea72b1cad' # Artikel Konzept
+  - 'viewpeerentrydrafts:fa933347-d51c-4fd4-b944-cdc378d3dde8' # Footer

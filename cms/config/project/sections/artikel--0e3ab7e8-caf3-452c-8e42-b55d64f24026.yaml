@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - fedb00ce-c6fb-4ef7-ba11-7c52ac8a5510 # Blog-Overview
+handle: artikel
+maxAuthors: 10
+name: 'Artikel Tech'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre Eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  b770f7e5-3411-4c52-91e3-c5929d334207: # CraftDev
+    enabledByDefault: true
+    hasUrls: true
+    template: artikel/_entry.twig
+    uriFormat: 'artikel/{slug}'
+structure:
+  maxLevels: null
+  uid: 2a9080e1-043a-414b-be3e-f5ef52cdca9e
+type: structure

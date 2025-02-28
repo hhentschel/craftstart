@@ -12,10 +12,10 @@
   overflow-x: auto;
   max-width: 100%;
 
-  thead {
+  :is(thead) {
 
-    tr {
-      th {
+    :is(tr) {
+      :is(th) {
         min-width: 50px;
         border-bottom: 2px solid black;
 
@@ -26,12 +26,12 @@
     }
   }
 
-  tbody {
-    tr {
+  :is(tbody) {
+    :is(tr) {
       border-bottom: 1px solid black;
     }
 
-    td {
+    :is(td) {
       padding: 18px 0;
 
 
