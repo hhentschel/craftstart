@@ -1,4 +1,4 @@
-- pipeline: "Craftdev: Build & Deploy to Staging"
+- pipeline: "Craftdev: Build & Deploy to Production"
   trigger_mode: "ON_EVERY_PUSH"
   ref_name: "main"
   ref_type: "BRANCH"
