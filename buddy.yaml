@@ -1,4 +1,4 @@
-- pipeline: "Craftdev: Build & Deploy to Production"
+- pipeline: "Staging Craftstart"
   trigger_mode: "ON_EVERY_PUSH"
   ref_name: "develop"
   ref_type: "BRANCH"
@@ -116,7 +116,7 @@
       authentication_mode: "WORKSPACE_KEY"
       commands:
         - "# Reload our PHP process"
-        - 'echo "" | sudo -S service php8.3-fpm reload'
+        - 'echo "" | sudo -S service php8.4-fpm reload'
       trigger_condition: "ALWAYS"
       run_as_script: true
       shell: "SH"
@@ -128,6 +128,6 @@
     - key: "REMOTE_PROJECT_ROOT"
       value: "/home/ploi/staging.craftstart.henrik-hentschel.de"
     - key: "REMOTE_SSH_WEB"
-      value: "116.202.14.186"
+      value: "91.99.80.62"
     - key: "REMOTE_SSH_USER"
       value: "ploi"
