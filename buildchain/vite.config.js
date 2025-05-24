@@ -28,7 +28,7 @@ export default defineConfig(({command}) => ({
   },
   plugins: [
     critical({
-      criticalUrl: 'https://staging.craftstart.henrik-hentschel.de/',
+      criticalUrl: 'https://craftstart.henrik-hentschel.de/',
       criticalBase: '../web/dist/criticalcss/',
       criticalPages: [
         {
